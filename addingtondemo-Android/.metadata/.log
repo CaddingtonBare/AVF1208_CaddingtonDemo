@@ -1,0 +1,19 @@
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-08-01 01:31:02.327
+!MESSAGE Failed to load properties file for project 'AddingtonAVFDemo'
+
+!ENTRY org.eclipse.core.resources 4 566 2012-08-01 01:31:03.794
+!MESSAGE Could not save master table to file '/Users/christopheraddington/Documents/FullSail/AVF/AVF1208_AddingtonDemo/addingtondemo-Android/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: /Users/christopheraddington/Documents/FullSail/AVF/AVF1208_AddingtonDemo/addingtondemo-Android/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources (No such file or directory)
+	at java.io.FileOutputStream.openAppend(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:192)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:116)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1227)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1220)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1197)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
