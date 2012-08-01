@@ -262,3 +262,24 @@ Caused by: java.lang.NullPointerException
 
 !ENTRY org.eclipse.ui 2 2 2012-08-01 02:25:28.583
 !MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-08-01 02:38:54.535
+!MESSAGE Failed to call IProjectListener.projectOpened
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class com.android.ide.eclipse.adt.internal.resources.ResourceHelper
+	at com.android.ide.eclipse.adt.internal.resources.manager.ResourceManager.createProject(ResourceManager.java:548)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ResourceManager.access$1(ResourceManager.java:504)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ResourceManager$1.projectOpened(ResourceManager.java:383)
+	at com.android.ide.eclipse.adt.internal.resources.manager.GlobalProjectMonitor$DeltaVisitor.visit(GlobalProjectMonitor.java:252)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at com.android.ide.eclipse.adt.internal.resources.manager.GlobalProjectMonitor$1.resourceChanged(GlobalProjectMonitor.java:501)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
