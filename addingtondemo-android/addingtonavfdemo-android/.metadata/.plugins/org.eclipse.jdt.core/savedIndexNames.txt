@@ -1,6 +1,0 @@
-INDEX VERSION 1.126+/Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android/.metadata/.plugins/org.eclipse.jdt.core
-1927926511.index
-471845370.index
-101281190.index
-4258971555.index
-897211444.index
