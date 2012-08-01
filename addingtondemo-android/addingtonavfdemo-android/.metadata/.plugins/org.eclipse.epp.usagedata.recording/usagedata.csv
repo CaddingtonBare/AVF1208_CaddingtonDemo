@@ -1,0 +1,38 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console",1343786730391
+started,bundle,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.editors",1343786730391
+started,bundle,org.eclipse.ui.forms,3.5.101.v20111011-1919,"org.eclipse.ui.forms",1343786730685
+started,bundle,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.ide",1343786730737
+started,bundle,org.eclipse.ui.net,1.2.100.v20111208-1155,"org.eclipse.ui.net",1343786730783
+started,bundle,org.eclipse.ui.views,3.6.0.v20110928-1505,"org.eclipse.ui.views",1343786730830
+started,bundle,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"org.eclipse.ui.workbench",1343786730939
+started,bundle,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.workbench.texteditor",1343786731017
+started,bundle,org.eclipse.wst.jsdt.core,1.1.102.v201111090634,"org.eclipse.wst.jsdt.core",1343786731158
+started,bundle,org.eclipse.wst.jsdt.manipulation,1.0.300.v201104272153,"org.eclipse.wst.jsdt.manipulation",1343786731216
+started,bundle,org.eclipse.wst.jsdt.ui,1.1.102.v201201131900,"org.eclipse.wst.jsdt.ui",1343786731216
+started,bundle,org.eclipse.wst.server.core,1.1.304.v20120208_1420,"org.eclipse.wst.server.core",1343786731658
+started,bundle,com.android.ide.eclipse.adt,18.0.0.v201203301601-306762,"com.android.ide.eclipse.adt",1343786731658
+os,sysinfo,,,"macosx",1343786731660
+arch,sysinfo,,,"x86_64",1343786731660
+ws,sysinfo,,,"cocoa",1343786731660
+locale,sysinfo,,,"en_US",1343786731660
+processors,sysinfo,,,"8",1343786731660
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1343786731660
+java.runtime.version,sysinfo,,,"1.6.0_31-b04-415-11M3646",1343786731660
+java.specification.name,sysinfo,,,"Java Platform API Specification",1343786731660
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1343786731660
+java.specification.version,sysinfo,,,"1.6",1343786731660
+java.vendor,sysinfo,,,"Apple Inc.",1343786731660
+java.version,sysinfo,,,"1.6.0_31",1343786731660
+java.vm.info,sysinfo,,,"mixed mode",1343786731660
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1343786731660
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1343786731660
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1343786731660
+java.vm.specification.version,sysinfo,,,"1.0",1343786731660
+java.vm.vendor,sysinfo,,,"Apple Inc.",1343786731660
+java.vm.version,sysinfo,,,"20.6-b01-415",1343786731660
+started,bundle,org.eclipse.epp.usagedata.ui,1.3.1.R201106061540,"org.eclipse.epp.usagedata.ui",1343786733364
+opened,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1343786735551
+started,bundle,org.eclipse.update.scheduler,3.2.300.v20100512,"org.eclipse.update.scheduler",1343786735766
+started,bundle,org.eclipse.update.configurator,3.3.100.v20100512,"org.eclipse.update.configurator",1343786737195
+started,bundle,org.eclipse.update.core,3.2.500.v20110330,"org.eclipse.update.core",1343786737340

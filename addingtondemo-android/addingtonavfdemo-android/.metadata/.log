@@ -1,0 +1,324 @@
+
+!ENTRY org.eclipse.ui.ide 4 4 2012-07-15 21:22:19.627
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2012-07-15 21:22:19.627
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2012-07-15 21:22:19.627
+!MESSAGE Could not write workspace metadata '/Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android/.metadata/.plugins/org.eclipse.core.resources/.root/3.tree'.
+!STACK 0
+java.io.FileNotFoundException: /Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android/.metadata/.plugins/org.eclipse.core.resources/.root/3.tree (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:194)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:145)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.saveTree(SaveManager.java:1350)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1134)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2375)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:508)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SESSION 2012-07-15 21:22:20.508 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -data /Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-15 21:22:24.769
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2012-07-15 21:23:57.675 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -data /Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-15 21:24:00.726
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2012-07-15 21:25:46.148 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -data /Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-15 21:25:49.234
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2012-07-15 21:26:36.889 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -data /Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-15 21:26:39.913
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2012-07-15 21:32:26.381 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -data /Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-15 21:32:29.431
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2012-07-15 21:34:09.607 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -data /Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-15 21:34:12.695
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2012-07-15 21:35:27.062 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -data /Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-15 21:35:30.160
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2012-07-15 21:41:35.688 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-15 21:41:39.703
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2012-07-15 21:50:35.453 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -data /Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-15 21:50:38.593
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-07-15 22:04:26.820
+!MESSAGE Failed to load properties file for project 'addingtonavfdemo'
+!SESSION 2012-07-15 22:11:48.582 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -data /Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-15 22:11:52.410
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2012-07-15 22:14:00.538 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-15 22:14:04.508
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2012-07-15 22:49:57.240 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -data /Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-15 22:50:00.546
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-07-15 22:50:53.863
+!MESSAGE 
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/addingtonavfdemo/res' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:320)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:1302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2012-07-15 22:50:53.864
+!MESSAGE Resource '/addingtonavfdemo/res' does not exist.
+!SESSION 2012-07-15 22:54:54.796 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -data /Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-15 22:54:57.994
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2012-07-15 22:55:57.774 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -product org.eclipse.epp.package.javascript.product -data /Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-15 22:56:01.001
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2012-07-15 23:04:19.297 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-15 23:04:22.735
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.core 4 0 2012-07-16 00:49:21.255
+!MESSAGE Invalid ZIP archive: assets/www/cordova-1.7.0.js [in addingtonavfdemo]
+!SESSION 2012-07-16 01:29:31.428 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jdt.core 4 0 2012-07-16 01:29:40.287
+!MESSAGE Invalid ZIP archive: assets/www/cordova-1.7.0.js [in addingtonavfdemo]
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-16 01:29:40.422
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.core 4 0 2012-07-16 01:29:43.803
+!MESSAGE Invalid ZIP archive: assets/www/cordova-1.7.0.js [in addingtonavfdemo]
+
+!ENTRY org.eclipse.jdt.core 4 0 2012-07-16 01:30:07.698
+!MESSAGE Invalid ZIP archive: assets/www/cordova-1.7.0.js [in addingtonavfdemo]
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-07-16 02:04:20.266
+!MESSAGE Unable to read /Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android/addingtonavfdemo/AndroidManifest.xml: org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/addingtonavfdemo/AndroidManifest.xml'.
+!STACK 0
+com.android.io.StreamException: org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/addingtonavfdemo/AndroidManifest.xml'.
+	at com.android.ide.eclipse.adt.io.IFileWrapper.getContents(IFileWrapper.java:51)
+	at com.android.sdklib.xml.AndroidManifestParser.parse(AndroidManifestParser.java:607)
+	at com.android.ide.eclipse.adt.internal.project.AndroidManifestHelper.parse(AndroidManifestHelper.java:71)
+	at com.android.ide.eclipse.adt.internal.build.builders.PreCompilerBuilder.build(PreCompilerBuilder.java:367)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/addingtonavfdemo/AndroidManifest.xml'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at com.android.ide.eclipse.adt.io.IFileWrapper.getContents(IFileWrapper.java:49)
+	... 15 more
+
+!ENTRY org.eclipse.jdt.core 4 0 2012-07-16 02:04:26.687
+!MESSAGE Invalid ZIP archive: assets/www/cordova-1.7.0.js [in addingtonavfdemo]
+!SESSION 2012-07-16 20:42:34.478 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-16 20:42:43.099
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.osgi 2 0 2012-07-16 20:42:45.891
+!MESSAGE While loading class "com.android.ide.eclipse.adt.internal.welcome.AdtStartup", thread "Thread[Worker-3,5,main]" timed out waiting (2ms) for thread "Thread[Worker-8,5,main]" to finish starting bundle "com.android.ide.eclipse.adt_18.0.0.v201203301601-306762 [298]". To avoid deadlock, thread "Thread[Worker-3,5,main]" is proceeding but "com.android.ide.eclipse.adt.internal.welcome.AdtStartup" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/com.android.ide.eclipse.adt_18.0.0.v201203301601-306762.jar" by thread "Worker-8".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:345)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1207)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:260)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:117)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$63.run(Workbench.java:2470)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 26 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1087)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:297)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:345)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1207)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:260)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:117)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$63.run(Workbench.java:2470)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jdt.core 4 0 2012-07-16 20:45:36.528
+!MESSAGE Invalid ZIP archive: assets/www/cordova-1.7.0.js [in addingtonavfdemo]
+!SESSION 2012-07-31 22:04:10.291 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -keyring /Users/christopheraddington/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-07-31 22:04:17.262
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2012-07-31 22:04:59.403
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences

@@ -1,0 +1,1 @@
+INDEX VERSION 1.122+/Users/christopheraddington/Documents/Full Sail/AVF/AVF1207_AddingtonDemo/addingtondemo-android/addingtonavfdemo-android/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
