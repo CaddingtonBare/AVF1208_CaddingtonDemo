@@ -198,7 +198,6 @@ ul[id=sportslist] a{
 }
 section h3 {
     font: bold 14px Helvetica;
-    text-decoration: none;
     color: #e2ef35;
     margin: 0 10px 0 0;
     padding: 3px;

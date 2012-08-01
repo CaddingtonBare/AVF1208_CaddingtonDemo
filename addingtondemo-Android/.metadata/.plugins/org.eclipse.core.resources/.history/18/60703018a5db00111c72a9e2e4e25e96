@@ -26,6 +26,11 @@
                 <p>Advanced Visual Frameworks (AVF) 1208</p>
             <br>
             </section>
+                <h1>Week 2 Reflection Video</h1>
+            <video width="480" height="272" controls>
+                <source src="addingtonAVFWk2.mov" type="video/mp4" />
+                <source src="addingtonAVFWk2.mov" type='video.webm; codecs="vp8, vorbis"' />
+            </video>
             <section id="demoCRUD" align="center" data-theme="a">
                 <h1>Links to CRUD Apps</h1>
                 <a href="#landing">    

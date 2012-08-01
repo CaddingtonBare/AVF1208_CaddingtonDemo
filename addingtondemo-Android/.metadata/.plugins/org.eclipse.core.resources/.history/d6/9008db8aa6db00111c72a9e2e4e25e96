@@ -196,7 +196,7 @@ ul[id=sportslist] a{
     text-decoration: none;
     color: #e2ef35;
 }
-section h3 {
+section a {
     font: bold 14px Helvetica;
     text-decoration: none;
     color: #e2ef35;

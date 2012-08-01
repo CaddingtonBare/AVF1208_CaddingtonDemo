@@ -128,6 +128,18 @@ img[id=ctaimg]{
     margin: 10px 0 20px;
     width: 100%;
 }
+section h1:nth-child(1) {
+    width: auto;
+    padding: 5px;
+    margin: 0 0 20px 0;
+    font: bold 36px Helvetica;
+    color: #E2EF35;
+    text-align: center;
+    text-shadow: 1px 1px #141714;
+    border: 1px solid #141714;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(top, #474745, #5c5b5a 75%);
+}
 header h1:nth-child(1) {
     width: auto;
     padding: 5px;
@@ -195,17 +207,6 @@ ul[id=sportslist] * ul:nth-child(1){
 ul[id=sportslist] a{
     text-decoration: none;
     color: #e2ef35;
-}
-section h3 {
-    font: bold 14px Helvetica;
-    text-decoration: none;
-    color: #e2ef35;
-    margin: 0 10px 0 0;
-    padding: 3px;
-    border: thin solid #141714;
-    border-radius: 5px;
-    background-image: -webkit-linear-gradient(top, #474745, #5c5b5a 100%);
-    box-shadow: 2px 2px 0 0 rgba(110,110,110,1);
 }
 nav a {
     font: bold 14px Helvetica;
