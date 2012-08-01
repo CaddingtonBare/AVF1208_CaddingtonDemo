@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!-- AVF Demo App / Christopher Addington / Term: 1207 -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>My Pickup League</title>
+
+        <meta name="description" content="Pickup League web app launch page" />
+        <meta name="keywords" content="pickup, sports, league" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="cleartype" content="on">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<link rel="stylesheet" href="styles.css" />
+        <script src="js/libs/modernizr.custom.min.js"></script>
+    </head>
+    <body>
+    <div data-role="page" id="landing" data-theme="a">
+        <div data-role="header" data-theme="a" data-position="fixed">
+	    <h1>Team Home</h1>
+        </div>
+	<div data-role="content">
+            <img id="brandlogohome" src="leaguelogo.png" />
+	</div>
+        <div id="CTA">
+            <a href="additem.html" id="ctalink">
+                <img id="ctaimg" src="CTA.png">
+            </a>
+        </div>
+	<!-- Search -->
+        <div data-role="content">
+	    <form id="search" action="">
+		<div align="center">
+		    <input id="searchbox" type="text" placeholder="Team Name" data-theme="c" />
+		    <input id="gosearch" type="submit" value="Search" data-theme="a">
+		</div>
+	    </form>
+	</div>
+	<div data-role="content" >
+	    <div data-role="collapsible-set">
+	    	<div data-role="collapsible" data-collapsed="true" data-theme="a">
+		    <h3><img src="Basketball_10px.png" />Basketball</h3>
+	        <div data-role="content">
+			<ul data-role="listview" data-theme="c">
+			    <li><a href="#bball1">Dayton Ballers</a></li>
+			    <li><a href="#bball2">Charity</a></li>
+			    <li><a href="#bball3">20-somethings</a></li>
+			    <li><a href="#bball4">Half-court dunkers</a></li>
+			</ul>
+		    </div>
+		</div>
+		<div data-role="collapsible" data-collapsed="true" data-theme="a">
+		    <h3><img src="Football_10px.png" />Football</h3>
+		    <div data-role="content">
+			<ul data-role="listview" data-theme="c">
+			    <li><a href="#fball1">Winter Madmen</a></li>
+			    <li><a href="#fball2">Real-life fantasy football</a></li>
+			    <li><a href="#fball3">Seattle Seachickens</a></li>
+			    <li><a href="#fball4">50-yard heroes</a></li>
+			</ul>
+		    </div>
+		</div>
+		<div data-role="collapsible" data-collapsed="true" data-theme="a">
+		    <h3><img src="Racquetball_10px.png" />Racquetball</h3>
+		    <div data-role="content">
+			<ul data-role="listview" data-theme="c">
+			    <li><a href="#rball1">Cutthroat</a></li>
+			    <li><a href="#rball2">Base gym ladder match</a></li>
+			    <li><a href="#rball3">Doubles champs</a></li>
+			    <li><a href="#rball4">Ladder climber</a></li>
+			</ul>
+		    </div>
+		</div>
+		<div data-role="collapsible" data-collapsed="true" data-theme="a">
+		    <h3><img src="Soccer_small.png" />Soccer</h3>
+		    <div data-role="content">
+			<ul data-role="listview" data-theme="c">
+			    <li><a href="#sball1">Weekend warriors</a></li>
+			    <li><a href="#sball2">Monterey world cup champers</a></li>
+			    <li><a href="#sball3">Winning Ten</a></li>
+			    <li><a href="#sball4">Underdogs</a></li>
+			</ul>
+		    </div>
+		</div>
+		<div data-role="collapsible" data-collapsed="true" data-theme="a">
+		    <h3><img src="Tennis_10px.png" />Tennis</h3>
+		    <div data-role="content">
+			<ul data-role="listview" data-theme="c">
+			    <li><a href="#tball1">Wimbledon Wanna-be</a></li>
+			    <li><a href="#tball2">Federer Fanbois</a></li>
+			    <li><a href="#tball3">Couples Club</a></li>
+			    <li><a href="#tball4">Singles practice</a></li>
+			</ul>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+    <div data-role="page" id="bball1" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>Dayton Ballers</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 3</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-01</p>
+	    <p>Notes: Me Tom Joe 3v3 tourney</p>
+	</div>
+    </div>
+    <div data-role="page" id="bball2" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>Charity</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+            <p>Team Size: 2</p>
+    	    <p>Only Evening Games: No</p>
+    	    <p>Next available date: 2011-11-02</p>
+	    <p>Notes: Me Scott 2v2 tourney</p>
+	</div>
+    </div>
+    <div data-role="page" id="bball3" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>20-somethings</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 5</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-03</p>
+	    <p>Notes: Base league 25-35 5v5</p>
+	</div>
+    </div>
+    <div data-role="page" id="bball4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>Half-court dunkers</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 3</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-04</p>
+	    <p>Notes: Battle of the businesses summer league 3v3</p>
+	</div>
+    </div>
+    <div data-role="page" id="fball1" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>Winter Madmen</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 6</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-05</p>
+	    <p>Notes: Tucson adult football winter 6v6</p>
+	</div>
+    </div>
+    <div data-role="page" id="fball2" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>Real-life fantasy football</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 8</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-06</p>
+	    <p>Notes: Summer flag football 7v7 with sub</p>
+	</div>
+    </div>
+    <div data-role="page" id="fball3" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Seattle Seachickens</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 4</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-07</p>
+	    <p>Notes: Mark's out next week, need replacement</p>
+	</div>
+    </div>
+    <div data-role="page" id="fball4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>50-yard heroes</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 2</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-08</p>
+	    <p>Notes: Saturday morning kicker's practice</p>
+	</div>
+    </div>
+    <div data-role="page" id="rball1" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Cutthroat</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 3</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-09</p>
+	    <p>Notes: Tues. night cutthroat match with Glenn Tim</p>
+	</div>
+    </div>
+    <div data-role="page" id="rball2" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Base gym ladder match</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 1</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-10</p>
+	    <p>Notes: Currently #4, sched match with Gordo for #3</p>
+	</div>
+    </div>
+    <div data-role="page" id="rball3" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Doubles champs</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 2</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-11</p>
+	    <p>Notes: Monthly doubles tourney team with Jackie</p>
+	</div>
+    </div>
+    <div data-role="page" id="rball4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Ladder climber</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 1</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-12</p>
+	    <p>Notes: Unofficial 25-35 gym ladder match</p>
+	</div>
+    </div>
+    <div data-role="page" id="sball1" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Weekend warriors</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 6</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-13</p>
+	    <p>Notes: Saturday night 6v6 pickup league</p>
+	</div>
+    </div>
+    <div data-role="page" id="sball2" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Monterey world cup champs</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 2</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-14</p>
+	    <p>Notes: 2v2 world cup bracket</p>
+	</div>
+    </div>
+    <div data-role="page" id="sball3" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Winning Ten</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 10</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-15</p>
+	    <p>Notes: Wed. night arena league</p>
+	</div>
+    </div>
+    <div data-role="page" id="sball4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Underdogs</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 3</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-16</p>
+	    <p>Notes: 3v3 fun league - Thurs. night</p>
+	</div>
+    </div>
+    <div data-role="page" id="tball1" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Wimbledon Wanna-be</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 1</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-17</p>
+	    <p>Notes: Sat. afternoon casual league</p>
+	</div>
+    </div>
+    <div data-role="page" id="tball2" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Federer Fanbois</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 2</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-18</p>
+	    <p>Notes: Mon. night racquet club doubles</p>
+	</div>
+    </div>
+    <div data-role="page" id="tball3" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Couples Club</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 2</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-19</p>
+	    <p>Notes: Church couples doubles matches</p>
+	</div>
+    </div>
+    <div data-role="page" id="tball4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Singles practice</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 1</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-20</p>
+	    <p>Notes: Team for scheduling random singles matches</p>
+	</div>
+    </div>
+	
+        </div>
+    </div>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="jquery.couch.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
+    </body>
+</html>
