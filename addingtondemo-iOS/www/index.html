@@ -1,44 +1,538 @@
 <!DOCTYPE html>
+<!-- AVF Demo App / Christopher Addington / Term: 1207 -->
 <html>
-<!--
-#
-# Licensed to the Apache Software Foundation (ASF) under one
-# or more contributor license agreements.  See the NOTICE file
-# distributed with this work for additional information
-# regarding copyright ownership.  The ASF licenses this file
-# to you under the Apache License, Version 2.0 (the
-# "License"); you may not use this file except in compliance
-# with the License.  You may obtain a copy of the License at
-# 
-# http://www.apache.org/licenses/LICENSE-2.0
-# 
-# Unless required by applicable law or agreed to in writing,
-# software distributed under the License is distributed on an
-# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#  KIND, either express or implied.  See the License for the
-# specific language governing permissions and limitations
-# under the License.
-#
--->
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name = "format-detection" content = "telephone=no"/>
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width;" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello Cordova</title>
+        <meta charset="utf-8" />
+        <title>My Pickup League</title>
+
+        <meta name="description" content="Pickup League web app launch page" />
+        <meta name="keywords" content="pickup, sports, league" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="cleartype" content="on">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<link rel="stylesheet" href="styles.css" />
+    <script src="modernizr.custom.min.js"></script>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova™</h1>
-            <div id="deviceready">
-                <p class="status pending blink">Connecting to Device</p>
-                <p class="status complete blink hide">Device is Ready</p>
-            </div>
+        <div data-role="page" id="demolanding" data-add-back-btn="true" data-theme="a">
+            <header data-role="header" id="demoheader" data-theme="a" align="center" data-position="fixed">
+                <p>AVF Demo</p>
+            </header>
+            <section id="developerinfo" align="center">
+                <h1>Developer Information</h1>
+                <p>Christopher Addington</p>
+                <p>Full Sail University</p>
+                <p>Advanced Visual Frameworks (AVF) 1207</p>
+            </section>
+            <video>
+            </video>
+            <section id="demoCRUD" align="center" data-theme="a">
+                <h1>Links to CRUD Apps</h1>
+                <a href="#landing">    
+                    <h3>(Not yet) Working CRUD App</h3>
+                </a>
+                <br>
+                <a href="#">    
+                    <h3>(Currently just a # link) Revised CRUD App</h3>
+                </a>
+            </section>
+            <br>
+            <section id="demofeatures" align="center" data-theme="a">
+                <h1>Demo of Native Features</h1>
+                <a href="#" id="notify">
+                    <h3>Notification</h3>
+                </a>
+                <br>
+                <a href="#geolocation" id="geo">
+                    <h3>Geo</h3>
+                </a>
+            </section>
+            <br>
+            <section id="researchtopics" align="center" data-theme="a">
+                <h1>Weekly Research Topics</h1>
+                <a href="#firstweek">
+                    <h3>Industry Research and Project Intent</h3>
+                </a>
+                <br>
+                <a href="#secondweek">
+                    <h3>Accessibility</h3>
+                </a>
+                <br>
+                <a href="#thirdweek">
+                    <h3>Market Research</h3>
+                </a>
+            </section>
+            <br>
         </div>
-        <script type="text/javascript" src="cordova-2.0.0.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+        <div data-role="page" id="firstweek" data-add-back-btn="true" data-theme="a">
+            <header data-role="header" id="firstweekheader" data-theme="a" align="center" data-position="fixed">
+                <p>Industry Research and Project Intent</p>
+            </header>
+            <h3>1. What types of native features (on Android and iOS devices) would you be able to implement with the use of HTML/CSS/JS only?
+            </h3>
+                <p>From the looks of it, Phonegap covers nearly all of our bases for implementing native features (we will be able to utilize the accelerometer, geolocation, vibration, and/or sounds) through strictly HTML/CSS/JS.
+                </p>
+            <h3>2. For your CRUD app revision and/or Demo App components, which of these do you think you will implement?
+            </h3>
+                <p>I'm currently thinking Geolocation and Camera would be great for the app. Camera to take team photos and attach them to individually made teams; Geolocation for tagging the fields, courts, etc. for the games. If I had to choose a third it would be generally one of the notification to provide updates to scheduled games such as substitutes, change in location, etc.
+                </p>
+            <h3>3. Briefly describe some past 'lessons learned' regarding workflow as it relates to research, design, development, etc.
+            </h3>
+                <p>Never try to build the perfect mouse trap on your first time through. Not only does nitpicking every detail as you work waste time by holding you back, it also doesn't take into account that working on an outline with limited functionality has overwhelming benefits. The foremost of those being that going back to, in this case refactor code, is an invaluable learning experience. I've cemented solid coding practices by making huge mistakes, I learn better when I figure something out and know never to make the same mistake again.
+                </p>
+            <h3>4. Please describe any design intentions you may have for hte AVF Demo app and the revised/new version of your CRUD app.
+            </h3>
+                <p>My primary design intention is to put more power into the hands of potential Users by giving them more access to customizing their own experience through team photos/logos. Tapping into contacts is something I'm interested in, as it reinforces the social nature of my app.  Also, I would like to have multi-team calendar awareness so  if you played in several different sports throughout the week, a team lead could easily look up your schedule without needing to ask for availability.
+                </p>
+            <h3>5. If not covered above, please also describe any functionality intentions you may have for both the AVF Demo app and the revised/new version of your CRUD app.
+            </h3>
+            <p>Without having fully applied it through the "does it make sense to do this" filter yet, I would like to enable groups as well as teams with an option to view one as the default list on the landing page.  For example, if there's a group of friends who routinely play several sports, they can choose to view the group, click into it, and traverse sports plans within the scope of the group.  Not entirely sure I described it enough to match how I'm imagining it, if you're confused let's just call it a thought in progress.
+            </p>
+        </div>
+        <div data-role="page" id="secondweek" data-add-back-btn="true" data-theme="a">
+            <header data-role="header" id="secondweekheader" data-theme="a" align="center" data-position="fixed">
+                <p>Accessibility</p>
+            </header>
+            <h3>1. What are some of the ways that you could change your HTML on your Demo app to be more accessible? (Remember, you can use the Section tag with jQuery, for instance)
+            </h3>
+            <p>I could utilize the native video element to help screenreaders easily identify videos.  For deaf users I could then add track child elements within video with a call to .vtt files for captions/subtitles.  Taking the time to transcribe the subtitles in the caption format would enable deaf users to access the video’s content.  The track element can be used for blind users as well by adding audio descriptions of video content.
+            </p>
+            <h3>2. Visit a video service on the web (like YouTube) and search for "Screen Reader Demo" and "Mobile Screen Reader" - what are some of the common frustrations (or common support mechanisms) that you see among the examples that are given - how could you fix them (or use them)?
+            </h3>
+            <p>Based on comments by the YouTube user cavision1, I’ve found that there can be various problems with screen readers.  First is privacy concerns when audio is read aloud for blind users.  Cavision1 brings up a great point that sometimes text messages are read aloud at a higher volume than he’d like.  Navigation also seems to be a problem, including a lack of instruction on how to perform the navigation.  Though I’m not sure of the entire solution for navigation I believe (within the context of video) that navigation would be aided with the inclusion of chapters on all video content.  For the privacy of blind Users with a screen reader who want to keep private content at a lower volume, I would probably utilize a certain id to adjust the volume or alternatively confirm the volume with the user first.
+            </p>
+            <h3>3. Devices: Please list two devices (and some of their features) that are made specifically to support Accessibility.
+            </h3>
+            <p>The iPad and iPhone are the obvious picks, all thanks to the VoiceOver application.  While it’s technically the application that does the legwork, reading about Apple’s intent when designing the devices makes me think they qualify as being made to support Accessibility (if not specifically, at least with equal recognition).  The screens on both are large enough to provide more room for enlarged content (thinking of the near-blind) and VoiceOver allows for audio of nearly all on-screen elements.  Even actions such as dimming and screen lock include audio snippets.
+            </p>
+            <h3>4. Mobile Apps: Please list two apps (either Android or iOS, or both) that are made specifically to support Accessibility.
+            </h3>
+            <p>First is AT&amp;T Accessibility which provides a whole array of features designed specifically to support accessibility.  The best demo I found is at http://www.youtube.com/watch?v=zPxv1ARiQrU
+            The second would be VoiceOver that I mentioned previously for question #3.  It includes many on-screen features, but it even goes so far as to dictate how many faces are detected in a picture.  It lets users change button functionality as well, blind users can use the volume button to snap photos.
+            </p>
+        </div>
+        <section data-role="page" id="geolocation" data-add-back-btn="true" data-theme="a">
+            <header data-role="header" id="geoheader" data-theme="a" align="center" data-position="fixed">
+                <p>X marks the spot!</p>
+            </header>
+            <article data-role="content" id="geoSnapshot">
+            
+            </article>
+        </section>
+            
+            
+        <div data-role="page" id="landing" data-theme="a" data-add-back-btn="true">
+    <div data-role="page" id="landing" data-theme="a">
+        <div data-role="header" data-theme="a" data-position="fixed">
+	    <h1>Team Home</h1>
+        </div>
+	<div data-role="content">
+            <img id="brandlogohome" src="leaguelogo.png" />
+	</div>
+        <div id="CTA">
+            <a href="additem.html" id="ctalink">
+                <img id="ctaimg" src="CTA.png">
+            </a>
+        </div>
+	<!-- Search -->
+        <div data-role="content">
+	    <form id="search" action="">
+		<div align="center">
+		    <input id="searchbox" type="text" placeholder="Team Name" data-theme="c" />
+		    <input id="gosearch" type="submit" value="Search" data-theme="a">
+		</div>
+	    </form>
+	</div>
+	<div data-role="content" >
+	    <div data-role="collapsible-set">
+	    	<div data-role="collapsible" data-collapsed="true" data-theme="a">
+		    <h3><img src="Basketball_10px.png" />Basketball</h3>
+	        <div data-role="content">
+			<ul data-role="listview" data-theme="c">
+			    <li><a href="#bball1">Dayton Ballers</a></li>
+			    <li><a href="#bball2">Charity</a></li>
+			    <li><a href="#bball3">20-somethings</a></li>
+			    <li><a href="#bball4">Half-court dunkers</a></li>
+			</ul>
+		    </div>
+		</div>
+		<div data-role="collapsible" data-collapsed="true" data-theme="a">
+		    <h3><img src="Football_10px.png" />Football</h3>
+		    <div data-role="content">
+			<ul data-role="listview" data-theme="c">
+			    <li><a href="#fball1">Winter Madmen</a></li>
+			    <li><a href="#fball2">Real-life fantasy football</a></li>
+			    <li><a href="#fball3">Seattle Seachickens</a></li>
+			    <li><a href="#fball4">50-yard heroes</a></li>
+			</ul>
+		    </div>
+		</div>
+		<div data-role="collapsible" data-collapsed="true" data-theme="a">
+		    <h3><img src="Racquetball_10px.png" />Racquetball</h3>
+		    <div data-role="content">
+			<ul data-role="listview" data-theme="c">
+			    <li><a href="#rball1">Cutthroat</a></li>
+			    <li><a href="#rball2">Base gym ladder match</a></li>
+			    <li><a href="#rball3">Doubles champs</a></li>
+			    <li><a href="#rball4">Ladder climber</a></li>
+			</ul>
+		    </div>
+		</div>
+		<div data-role="collapsible" data-collapsed="true" data-theme="a">
+		    <h3><img src="Soccer_small.png" />Soccer</h3>
+		    <div data-role="content">
+			<ul data-role="listview" data-theme="c">
+			    <li><a href="#sball1">Weekend warriors</a></li>
+			    <li><a href="#sball2">Monterey world cup champers</a></li>
+			    <li><a href="#sball3">Winning Ten</a></li>
+			    <li><a href="#sball4">Underdogs</a></li>
+			</ul>
+		    </div>
+		</div>
+		<div data-role="collapsible" data-collapsed="true" data-theme="a">
+		    <h3><img src="Tennis_10px.png" />Tennis</h3>
+		    <div data-role="content">
+			<ul data-role="listview" data-theme="c">
+			    <li><a href="#tball1">Wimbledon Wanna-be</a></li>
+			    <li><a href="#tball2">Federer Fanbois</a></li>
+			    <li><a href="#tball3">Couples Club</a></li>
+			    <li><a href="#tball4">Singles practice</a></li>
+			</ul>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+    <div data-role="page" id="bball1" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>Dayton Ballers</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 3</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-01</p>
+	    <p>Notes: Me Tom Joe 3v3 tourney</p>
+	</div>
+    </div>
+    <div data-role="page" id="bball2" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>Charity</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+            <p>Team Size: 2</p>
+    	    <p>Only Evening Games: No</p>
+    	    <p>Next available date: 2011-11-02</p>
+	    <p>Notes: Me Scott 2v2 tourney</p>
+	</div>
+    </div>
+    <div data-role="page" id="bball3" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>20-somethings</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 5</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-03</p>
+	    <p>Notes: Base league 25-35 5v5</p>
+	</div>
+    </div>
+    <div data-role="page" id="bball4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>Half-court dunkers</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 3</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-04</p>
+	    <p>Notes: Battle of the businesses summer league 3v3</p>
+	</div>
+    </div>
+    <div data-role="page" id="fball1" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>Winter Madmen</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 6</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-05</p>
+	    <p>Notes: Tucson adult football winter 6v6</p>
+	</div>
+    </div>
+    <div data-role="page" id="fball2" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>Real-life fantasy football</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 8</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-06</p>
+	    <p>Notes: Summer flag football 7v7 with sub</p>
+	</div>
+    </div>
+    <div data-role="page" id="fball3" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Seattle Seachickens</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 4</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-07</p>
+	    <p>Notes: Mark's out next week, need replacement</p>
+	</div>
+    </div>
+    <div data-role="page" id="fball4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>50-yard heroes</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 2</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-08</p>
+	    <p>Notes: Saturday morning kicker's practice</p>
+	</div>
+    </div>
+    <div data-role="page" id="rball1" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Cutthroat</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 3</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-09</p>
+	    <p>Notes: Tues. night cutthroat match with Glenn Tim</p>
+	</div>
+    </div>
+    <div data-role="page" id="rball2" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Base gym ladder match</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 1</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-10</p>
+	    <p>Notes: Currently #4, sched match with Gordo for #3</p>
+	</div>
+    </div>
+    <div data-role="page" id="rball3" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Doubles champs</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 2</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-11</p>
+	    <p>Notes: Monthly doubles tourney team with Jackie</p>
+	</div>
+    </div>
+    <div data-role="page" id="rball4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Ladder climber</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 1</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-12</p>
+	    <p>Notes: Unofficial 25-35 gym ladder match</p>
+	</div>
+    </div>
+    <div data-role="page" id="sball1" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Weekend warriors</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 6</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-13</p>
+	    <p>Notes: Saturday night 6v6 pickup league</p>
+	</div>
+    </div>
+    <div data-role="page" id="sball2" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Monterey world cup champs</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 2</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-14</p>
+	    <p>Notes: 2v2 world cup bracket</p>
+	</div>
+    </div>
+    <div data-role="page" id="sball3" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Winning Ten</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 10</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-15</p>
+	    <p>Notes: Wed. night arena league</p>
+	</div>
+    </div>
+    <div data-role="page" id="sball4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Underdogs</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 3</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-16</p>
+	    <p>Notes: 3v3 fun league - Thurs. night</p>
+	</div>
+    </div>
+    <div data-role="page" id="tball1" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Wimbledon Wanna-be</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 1</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-17</p>
+	    <p>Notes: Sat. afternoon casual league</p>
+	</div>
+    </div>
+    <div data-role="page" id="tball2" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Federer Fanbois</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 2</p>
+	    <p>Only Evening Games: Yes</p>
+	    <p>Next available date: 2011-11-18</p>
+	    <p>Notes: Mon. night racquet club doubles</p>
+	</div>
+    </div>
+    <div data-role="page" id="tball3" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Couples Club</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 2</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-19</p>
+	    <p>Notes: Church couples doubles matches</p>
+	</div>
+    </div>
+    <div data-role="page" id="tball4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <h1>Singles practice</h1>
+        </div>
+	<div data-role="content">
+	    <a href="index.html">
+                <img id="brandlogo" src="leaguelogo.png" />
+	    </a>
+	</div>
+	<div data-role="content">
+	    <p>Team Size: 1</p>
+	    <p>Only Evening Games: No</p>
+	    <p>Next available date: 2011-11-20</p>
+	    <p>Notes: Team for scheduling random singles matches</p>
+	</div>
+    </div>
+	
+        </div>
+    </div>
+    </script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    <script type="text/javascript" src="jquery.validate.min.js"></script>
+    <script type="text/javascript" src="jquery.couch.js"></script>
+    <script type="text/javascript" src="main.js" ></script>
+    <script type="text/javascript" src="cordova-1.7.0.js"></script>
     </body>
 </html>
