@@ -4,18 +4,6 @@
 
 $(function(){
 
-$('#landing').live("pageshow", function() {
-	$.couch.db("pleague-app").view("pickupleague/sport", {
-		success: function(data){
-			console.log("Worked!");
-		},
-		failure: function(){
-			console.log("It didn't work, get to the van!");
-		}
-	})
-})
-	
-	
     var toggleControls = function(n){
         var displayNone = { 'display': 'none' };
         var displayInline = { 'display': 'inline' };
