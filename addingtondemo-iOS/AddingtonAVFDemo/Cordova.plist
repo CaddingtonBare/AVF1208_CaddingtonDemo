@@ -24,7 +24,9 @@
 	<true/>
 	<key>ExternalHosts</key>
 	<array>
-		<string>*.jquery.com</string>
+		<string>http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js</string>
+		<string>http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js</string>
+		<string>http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css</string>
 	</array>
 	<key>Plugins</key>
 	<dict>
