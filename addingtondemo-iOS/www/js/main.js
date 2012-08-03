@@ -2,13 +2,15 @@
 // Assignment: AVF Demo
 // AVF Term 1207
 
+console.log("Hello!");
+
 $(function(){
 
     var toggleControls = function(n){
         var displayNone = { 'display': 'none' };
         var displayInline = { 'display': 'inline' };
         var displayBlock = { 'display': 'block' };
-        
+  
         switch(n){
             case "on":
                 $('#teamForm').css(displayNone)
@@ -27,6 +29,7 @@ $(function(){
                 return false;
         }
     }
+
     var saveLocal = function(key) {
         if(!key){
            var id                  = Math.floor(Math.random()*42000000); 
@@ -44,6 +47,8 @@ $(function(){
         localStorage.setItem(id, JSON.stringify(item));
         alert("Team saved!");
     }
+
+  
     var getData = function(){
         toggleControls("on");
         if(localStorage.length === 0){
@@ -169,7 +174,7 @@ $(function(){
         //Get error messages
         var messageAry = [];
         //Group validation
-        if (getSport.val() == ""){
+        if (getSport.val() === ""){
             var sportError = "Please choose a sport.";
             getSport.css({
                 'border': '1px solid red'
@@ -177,7 +182,7 @@ $(function(){
             messageAry.push(sportError);
         }
         //Team Name validation
-        if (getTeamName.val() == ""){
+        if (getTeamName.val() === ""){
             var teamNameError = "Please enter a team name."
             getTeamName.css({
                 'border': '1px solid red'
@@ -185,7 +190,7 @@ $(function(){
             messageAry.push(teamNameError);
         }
         //Next Date validation
-        if (getNextDate.val() == ""){
+        if (getNextDate.val() === ""){
             var nextDateError = "Please enter a date."
             getNextDate.css({
                 'border': '1px solid red'
@@ -207,32 +212,6 @@ $(function(){
             saveLocal(this.key);
         }
     }
-    
-    /* Commented out couchdb call for jQM listview
-    //Couchdb data call and jQM listview display
-    $('#JSONpage').live("pageshow", function() {
-    	$.couch.db('pleague-app').view("pickupleague/sport", {
-    		success: function(answer) {
-    			console.log(answer);
-    			$('#jsontent').empty();
-    			$.each(answer.rows, function(index, sport){
-    				var item = (sport.value || sport.doc);
-    				$('#jsontent').append(
-    					$('<li id="' + item.teamname + '">').append(
-            				$('<a>')
-            					.attr("href", "sportpage.html?sport=" + item.sport + "&team=" + item.teamname + "&nextdate=" + item.nextdate)
-            					.text(item.teamname)
-            						.append(
-            								$('<img src="' + item.sport + '_10px.png" />')
-            						)		
-            			)
-            		);
-    			});
-            	$('#jsontent').listview('refresh');
-    		}
-        });                    
-    });
-    */
 
     var urlVars = function(){
     	var urlData = $($.mobile.activePage).data("url");
@@ -303,7 +282,7 @@ $(function(){
     //Populate edit form with info
     var errMsg = $('#errors');
     //Link/Submit Click events
-    $('#displayData').on('click', getData);
-    $('#clearData').on('click', clearLocal);
-    $('#submit').on('click', validate);
+  $('#displayData').on("click", getData);
+  $('#clearData').on("click", clearLocal);
+  $('#submit').on("click", validate);
 });
