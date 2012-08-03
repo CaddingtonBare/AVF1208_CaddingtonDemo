@@ -2,8 +2,6 @@
 // Assignment: AVF Demo
 // AVF Term 1207
 
-console.log("Hello!");
-
 $(function(){
 
     var toggleControls = function(n){
@@ -46,6 +44,7 @@ $(function(){
         //Save data into Local Storage: Use Stringify to convert our object to a string
         localStorage.setItem(id, JSON.stringify(item));
         alert("Team saved!");
+        window.location.reload();
     }
 
   
@@ -212,48 +211,7 @@ $(function(){
             saveLocal(this.key);
         }
     }
-
-    var urlVars = function(){
-    	var urlData = $($.mobile.activePage).data("url");
-        var urlParts = urlData.split('?');
-        var urlPairs = urlParts[1].split('&');
-        var urlValues = {};
-        for (var pair in urlPairs) {
-        	var keyValue = urlPairs[pair].split('=');
-        	var key = decodeURIComponent(keyValue[0]);
-        	var value = decodeURIComponent(keyValue[1]);
-        	urlValues[key] = value;
-        }
-        	return urlValues;
-    };
-
-    //Populate page with specific team data including Edit & Delete links
-    $('#sport').live("pageshow", function(){
-    	var sport = urlVars()["sport"];
-    	var team = urlVars()["team"];
-    	var date = urlVars()["nextdate"];
-    	console.log(sport);
-    	console.log(team);
-    	console.log(date);
-
-    	$.couch.db("pleague-app").openDoc(sport, {
-    		success: function(answer) {
-    			//Declaration of value variables, not sure how to reach these at this point though.
-    			
-    			$('#sportItems').append(
-    				'<h1>' + sport + '</h1>' +
-    					'<li id="' + team + '"> Team Name: ' + team + '></li>' + 
-    					'<li id="' + date + '"> Next Date: ' + date + '></li>' + 
-    					'<li><a href="#" id="editSTeam">Edit Team</a></li>' +
-    					'<li><a href="#" id="deleteSTeam">Delete Team</a></li>'
-    			).append(
-    				$('<li id="' + team + '> Team Name: ' + team + '></li>')	
-    			).append(
-    				$('<li id="' + date + '> Next Date: ' + date + '></li>')
-    			)
-    		}
-    	});
-    });    
+  
     //Geolocation feature for Demo landing page.
         //If successful, append concatenated snapshot image to newly-loaded page
     var successful = function (position) {

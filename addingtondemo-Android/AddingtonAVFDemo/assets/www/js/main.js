@@ -1,27 +1,14 @@
 // Name: Christopher Addington
-// Date: 28 June, 2012
-// Assignment: Project 1
+// Assignment: AVF Demo
 // AVF Term 1207
 
 $(function(){
 
-$('#landing').live("pageshow", function() {
-	$.couch.db("pleague-app").view("pickupleague/sport", {
-		success: function(data){
-			console.log("Worked!");
-		},
-		failure: function(){
-			console.log("It didn't work, get to the van!");
-		}
-	})
-})
-	
-	
     var toggleControls = function(n){
         var displayNone = { 'display': 'none' };
         var displayInline = { 'display': 'inline' };
         var displayBlock = { 'display': 'block' };
-        
+  
         switch(n){
             case "on":
                 $('#teamForm').css(displayNone)
@@ -40,6 +27,7 @@ $('#landing').live("pageshow", function() {
                 return false;
         }
     }
+
     var saveLocal = function(key) {
         if(!key){
            var id                  = Math.floor(Math.random()*42000000); 
@@ -56,7 +44,10 @@ $('#landing').live("pageshow", function() {
         //Save data into Local Storage: Use Stringify to convert our object to a string
         localStorage.setItem(id, JSON.stringify(item));
         alert("Team saved!");
+        window.location.reload();
     }
+
+  
     var getData = function(){
         toggleControls("on");
         if(localStorage.length === 0){
@@ -182,7 +173,7 @@ $('#landing').live("pageshow", function() {
         //Get error messages
         var messageAry = [];
         //Group validation
-        if (getSport.val() == ""){
+        if (getSport.val() === ""){
             var sportError = "Please choose a sport.";
             getSport.css({
                 'border': '1px solid red'
@@ -190,7 +181,7 @@ $('#landing').live("pageshow", function() {
             messageAry.push(sportError);
         }
         //Team Name validation
-        if (getTeamName.val() == ""){
+        if (getTeamName.val() === ""){
             var teamNameError = "Please enter a team name."
             getTeamName.css({
                 'border': '1px solid red'
@@ -198,7 +189,7 @@ $('#landing').live("pageshow", function() {
             messageAry.push(teamNameError);
         }
         //Next Date validation
-        if (getNextDate.val() == ""){
+        if (getNextDate.val() === ""){
             var nextDateError = "Please enter a date."
             getNextDate.css({
                 'border': '1px solid red'
@@ -220,82 +211,36 @@ $('#landing').live("pageshow", function() {
             saveLocal(this.key);
         }
     }
-    
-    //Couchdb data call and jQM listview display
-    $('#JSONpage').live("pageshow", function() {
-    	$.couch.db('pleague-app').view("pickupleague/sport", {
-    		success: function(answer) {
-    			console.log(answer);
-    			$('#jsontent').empty();
-    			$.each(answer.rows, function(index, sport){
-    				var item = (sport.value || sport.doc);
-    				$('#jsontent').append(
-    					$('<li id="' + item.teamname + '">').append(
-            				$('<a>')
-            					.attr("href", "sportpage.html?sport=" + item.sport + "&team=" + item.teamname + "&nextdate=" + item.nextdate)
-            					.text(item.teamname)
-            						.append(
-            								$('<img src="' + item.sport + '_10px.png" />')
-            						)		
-            			)
-            		);
-    			});
-            	$('#jsontent').listview('refresh');
-    		}
-        });                    
+  
+    //Geolocation feature for Demo landing page.
+        //If successful, append concatenated snapshot image to newly-loaded page
+    var successful = function (position) {
+        $('#geoLink').click();
+    var currentLoc = "<img src='http://maps.googleapis.com/maps/api/staticmap?center=" + position.coords.latitude+","+ position.coords.longitude + "&zoom=15&size=500x500&maptype=hybrid&markers=color:red%7Clabel:X%7C" + position.coords.latitude+","+ position.coords.longitude+"&sensor=false' width=100% />";
+        $('#geoSnapshot').html(currentLoc);
+    }
+  
+        //If unsuccessful, automatically notify User why
+    var unsuccessful = function (error) {
+        alert('code: ' + error.code + '\n' +
+        'message: ' + error.message + '\n');
+    }
+  
+    //Geo snapshot function with success/failure
+    $('#geo').on('click', function(){
+        navigator.geolocation.getCurrentPosition(successful, unsuccessful);
+    });
+  
+    //Notification feature for Demo landing page.
+    $('#notify').on('click', function(){
+        alert("Notification successful!");
+        navigator.notification.beep(1);
     });
 
-
-    var urlVars = function(){
-    	var urlData = $($.mobile.activePage).data("url");
-        var urlParts = urlData.split('?');
-        var urlPairs = urlParts[1].split('&');
-        var urlValues = {};
-        for (var pair in urlPairs) {
-        	var keyValue = urlPairs[pair].split('=');
-        	var key = decodeURIComponent(keyValue[0]);
-        	var value = decodeURIComponent(keyValue[1]);
-        	urlValues[key] = value;
-        }
-        	return urlValues;
-    };
-
-    //Populate page with specific team data including Edit & Delete links
-    $('#sport').live("pageshow", function(){
-    	var sport = urlVars()["sport"];
-    	var team = urlVars()["team"];
-    	var date = urlVars()["nextdate"];
-    	console.log(sport);
-    	console.log(team);
-    	console.log(date);
-
-    	$.couch.db("pleague-app").openDoc(sport, {
-    		success: function(answer) {
-    			//Declaration of value variables, not sure how to reach these at this point though.
-    			
-    			$('#sportItems').append(
-    				'<h1>' + sport + '</h1>' +
-    					'<li id="' + team + '"> Team Name: ' + team + '></li>' + 
-    					'<li id="' + date + '"> Next Date: ' + date + '></li>' + 
-    					'<li><a href="#" id="editSTeam">Edit Team</a></li>' +
-    					'<li><a href="#" id="deleteSTeam">Delete Team</a></li>'
-    			).append(
-    				$('<li id="' + team + '> Team Name: ' + team + '></li>')	
-    			).append(
-    				$('<li id="' + date + '> Next Date: ' + date + '></li>')
-    			)
-    		}
-    	});
-    });    
-    
     //Populate edit form with info
-    
-    
-    
-    
     var errMsg = $('#errors');
     //Link/Submit Click events
-    $('#displayData').on("click", getData);
-    $('#clearData').on("click", clearLocal);
-    $('#submit').on("click", validate);
+  $('#displayData').on("click", getData);
+  $('#clearData').on("click", clearLocal);
+  $('#submit').on("click", validate);
 });
