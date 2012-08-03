@@ -1,6 +1,6 @@
 // Name: Christopher Addington
 // Assignment: AVF Demo
-// AVF Term 1207
+// AVF Term 1208
 
 $(function(){
 
