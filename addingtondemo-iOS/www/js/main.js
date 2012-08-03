@@ -303,8 +303,7 @@ $(function(){
     //Populate edit form with info
     var errMsg = $('#errors');
     //Link/Submit Click events
-    $('#displayData').on("click", getData);
-    $('#clearData').on("click", clearLocal);
-    $('#submit').on("click", validate);
-
+    $('#displayData').on('click', getData);
+    $('#clearData').on('click', clearLocal);
+    $('#submit').on('click', validate);
 });
