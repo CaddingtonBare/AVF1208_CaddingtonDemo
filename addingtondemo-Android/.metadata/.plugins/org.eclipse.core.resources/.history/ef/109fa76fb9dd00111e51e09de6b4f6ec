@@ -1,8 +1,7 @@
 package com.fullsail.addingtonavfdemo;
 
-import android.app.Activity;
 import android.os.Bundle;
-import org.apache.cordova.*;
+import org.apache.cordova.DroidGap;
 
 public class MainActivity extends DroidGap {
     @Override
