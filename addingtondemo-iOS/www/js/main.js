@@ -2,6 +2,8 @@
 // Assignment: AVF Demo
 // AVF Term 1207
 
+$(function(){
+
     var toggleControls = function(n){
         var displayNone = { 'display': 'none' };
         var displayInline = { 'display': 'inline' };
@@ -304,3 +306,5 @@
     $('#displayData').on("click", getData);
     $('#clearData').on("click", clearLocal);
     $('#submit').on("click", validate);
+
+});
