@@ -24,6 +24,9 @@
 	<true/>
 	<key>ExternalHosts</key>
 	<array>
+		<string>https://caddington.cloudant.com/asdproject/_design%2Fpickupleague/index.html</string>
+		<string>http://www.appbrain.com/stats/android-market-app-categories</string>
+		<string>http://www.quora.com/What-are-the-top-5-categories-of-apps-in-terms-of-sales-from-the-iTunes-store</string>
 		<string>http://dev.jtsage.com/cdn/datebox/i8n/jquery.mobile.datebox.i8n.en.js</string>
 		<string>http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js</string>
 		<string>*.googleapis.com</string>

@@ -226,21 +226,82 @@ $(function(){
         'message: ' + error.message + '\n');
     }
   
-    //Geo snapshot function with success/failure
-    $('#geo').on('click', function(){
-        navigator.geolocation.getCurrentPosition(successful, unsuccessful);
+    //Native feature demo section, additional indentation for easy visual identification
+       
+        //Geo snapshot function with success/failure
+        $('#geo').on('click', function(){
+            navigator.geolocation.getCurrentPosition(successful, unsuccessful);
+        });
+  
+        //Notification feature for Demo landing page.
+        $('#notify').on('click', function(){
+            alert("Notification successful!");
+            navigator.notification.beep(1);
+        });
+  
+        //Network feature for Demo landing page
+        $('#network').on('click', function(){
+            var networkType = navigator.network.connection.type;
+            var connectionType = {};
+                connectionType[Connection.CELL_3G] = '3G';
+                connectionType[Connection.CELL_4G] = '4G';     
+                connectionType[Connection.UNKNOWN] = 'Unknown';
+                connectionType[Connection.WIFI] = 'Wi-Fi';
+
+            if (connectionType[networkType] === ('Unknown')) {
+                alert('You do not have any active network connections.');
+            }else{
+                alert('You are accessing the interwebs through a series of interconnected tubes and a ' + connectionType[networkType] + ' connection!');
+            }
+        });
+  
+        //Accelerometer feature for Demo landing page
+            // The watch id references the current `watchAcceleration`
+                var watchID = null;
+  
+            // Wait for PhoneGap to load
+            document.addEventListener("deviceready", onDeviceReady, false);
+  
+            function onDeviceReady() {
+            updateAccel();
+            }
+  
+            function updateAccel() {
+                watchID = navigator.accelerometer.watchAcceleration(successCond, errorCond, {frequency: 4000});
+            }
+
+            function stopUpdate() {
+                if (watchID) {
+                    navigator.accelerometer.clearWatch(watchID);
+                    watchID = null;
+                }
+            }
+  
+                // onSuccess: Get a snapshot of the current acceleration
+                function successCond (acceleration) {
+                    $('#accelContainer').innerHTML = 'Acceleration X: ' + acceleration.x + '<br />' +
+                    'Acceleration Y: ' + acceleration.y + '<br />' +
+                    'Acceleration Z: ' + acceleration.z + '<br />' +
+                    'Timestamp: '      + acceleration.timestamp + '<br />';
+                }
+  
+  // onError: Failed to get the acceleration
+  //
+  function errorCond() {
+  alert('Failed to sample Accelerometer data.');
+  }
+  
+  
+
+    //Mobile device page refresh
+    $('mobileRefresh').on('click', function(){
+        window.location.refresh();
     });
   
-    //Notification feature for Demo landing page.
-    $('#notify').on('click', function(){
-        alert("Notification successful!");
-        navigator.notification.beep(1);
-    });
-
     //Populate edit form with info
     var errMsg = $('#errors');
     //Link/Submit Click events
-  $('#displayData').on("click", getData);
-  $('#clearData').on("click", clearLocal);
-  $('#submit').on("click", validate);
+  $('#displayData').on('click', getData);
+  $('#clearData').on('click', clearLocal);
+  $('#submit').on('click', validate);
 });

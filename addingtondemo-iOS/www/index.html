@@ -16,7 +16,7 @@
 	<script src="js/jquery.mobile-1.0.min.js"></script>
     </head>
     <body>
-        <div data-role="page" id="demolanding" data-add-back-btn="true" data-theme="a">
+        <article data-role="page" id="demolanding" data-add-back-btn="true" data-theme="a">
             <header data-role="header" id="demoheader" data-theme="a" align="center" data-position="fixed">
                 <p>AVF Demo</p>
             </header>
@@ -27,18 +27,41 @@
                 <p>Advanced Visual Frameworks (AVF) 1208</p>
             </section>
             <section id="demoCRUD" align="center" data-theme="a">
-                <h1>Links to CRUD Apps</h1>
-                <a href="#landing">    
-                    <h3>(Not yet) Working CRUD App</h3>
+                <h1>CRUD Apps</h1>
+                <a href="https://caddington.cloudant.com/asdproject/_design%2Fpickupleague/additem.html">    
+                    <h3>Original CRUD App</h3>
                 </a>
                 <br>
-                <a href="#">    
-                    <h3>(Currently just a # link) Revised CRUD App</h3>
+                <a href=additem.html>    
+                    <h3>Revised CRUD App</h3>
                 </a>
             </section>
             <br>
             <section id="demofeatures" align="center" data-theme="a">
-                <h1>Demo of Native Features</h1>
+                <h1><img src="img/android_50px.png" />+<img src="img/apple.png" /></h1>
+                <a href="#" id="notify">
+                    <h3>Notification</h3>
+                </a>
+                <br>
+                <a href="#geolocation" id="geo">
+                    <h3>Geo</h3>
+                </a><br>
+                <a href="#" id="network">
+                    <h3>Network</h3>
+                </a>
+            </section>
+            <section id="iosdemofeatures" align="center" data-theme="a">
+                <h1><img src="img/apple.png" /></h1>
+                <a href="#accelerometer" id="network">
+                    <h3>Accelerometer</h3>
+                </a>
+                <br>
+                <a href="#geolocation" id="geo">
+                    <h3>Geo</h3>
+                </a>
+            </section>
+            <section id="androiddemofeatures" align="center" data-theme="a">
+                <h1><img src="img/android_50px.png" /></h1>
                 <a href="#" id="notify">
                     <h3>Notification</h3>
                 </a>
@@ -63,8 +86,8 @@
                 </a>
             </section>
             <br>
-        </div>
-        <div data-role="page" id="firstweek" data-add-back-btn="true" data-theme="a">
+        </article>
+        <article data-role="page" id="firstweek" data-add-back-btn="true" data-theme="a">
             <header data-role="header" id="firstweekheader" data-theme="a" align="center" data-position="fixed">
                 <p>Industry Research and Project Intent</p>
             </header>
@@ -88,8 +111,8 @@
             </h3>
             <p>To summarize, I'd like to have robust micro-(team) and macro-level (league) management through the app to really help the Users build a community with the help of the app.  Mostly to provide a one-stop shop experience for Users who's connection with teammates revolves around the sports they play.
             </p>
-        </div>
-        <div data-role="page" id="secondweek" data-add-back-btn="true" data-theme="a">
+        </article>
+        <article data-role="page" id="secondweek" data-add-back-btn="true" data-theme="a">
             <header data-role="header" id="secondweekheader" data-theme="a" align="center" data-position="fixed">
                 <p>Accessibility</p>
             </header>
@@ -110,7 +133,71 @@
             <p>First is AT&amp;T Accessibility which provides a whole array of features designed specifically to support accessibility.  The best demo I found is at http://www.youtube.com/watch?v=zPxv1ARiQrU
             The second would be VoiceOver that I mentioned previously for question #3.  It includes many on-screen features, but it even goes so far as to dictate how many faces are detected in a picture.  It lets users change button functionality as well, blind users can use the volume button to snap photos.
             </p>
-        </div>
+        </article>
+        <article data-role="page" id="thirdweek" data-add-back-btn="true" data-theme="a">
+            <header data-role="header" id="thirdweekheader" data-theme="a" align="center" data-position="fixed">
+                <p>Market Research</p>
+            </header>
+            <h3>1. What are the 'top selling' app categories in the U.S.?
+            </h3>
+            <p>The top selling iOS app categories in the U.S. (in order) are: Games, Utilities, Lifestyle, and Social Networking. For Android: Entertainment, Personalization, Books/Reference, and Tools.
+            (Categories as defined by the sources, noted below respectively)
+                <h4>
+                    <a href="http://www.quora.com/What-are-the-top-5-categories-of-apps-in-terms-of-sales-from-the-iTunes-store">Source
+                    </a>
+                    <a href="http://www.appbrain.com/stats/android-market-app-categories">Source
+                    </a>
+                </h4>
+            </p>
+            <h3>2. What are the 'top selling' app categories in Japan?
+            </h3>
+            <p>I had a difficult time pinning down an up-to-date list for this so I took a sampling of several site’s listings for popular apps (excluding sites that listed their own app as #1).  The top categories seemed to be (not necessarily in order): Games, Social networking, and utility.
+            </p>
+            <h3>3. What are the 'top selling' app categories in Great Britain?
+            </h3>
+            <p>The top selling app categories in Great Britain are Social networking, games, utilities, and lifestyle.
+                <h4>
+                    <a href="http://www.apple.com/uk/iphone/from-the-app-store/">Source
+                    </a>
+                </h4>
+            </p>
+            <h3>4. Based on your three answers above, what might you infer about each of the markets listed?
+            </h3>
+            <p>The obvious takeaway is that games, utilities, lifestyle, and social networking are of universal appeal to countries/cultures across the world.  The popularity of social networking as one of the consistently-top-selling app categories lends itself to the notion that a popular application might easily go viral on a global scale, regardless of the category.
+            </p>
+            <h3>5. What percentage of Android users have the latest/greatest OS in the U.S? in Japan? in Great Britain? How might these differences impact development?
+            </h3>
+            <p>
+                <ul>
+                    <li>U.S: 11.65% for all versions 4.0+; 0.26% if limited to those running 4.1</li>
+                    <li>Japan: 9.8% for all versions 4.0+; 0.04% if limited to those running 4.1</li>
+                    <li>GB: 24.73% for all versions 4.0+; 0.70% if limited to those running 4.1</li>
+                </ul>
+                The differences in Android OS usage can affect development of specific version in instances like the current trend of sticking to 2.3.  Apps taking advantage of newer-version OS may not become commonplace until long after it has been released because of lagging adoption rates.  The greatest potential impact to development is a complete loss of support for a particular OS if it’s generally skipped over as is the case with 4.0+.
+                <h4>
+                    <a href="http://www.netmarketshare.com/operating-system-market-share.aspx?qprid=10&qpcustomd=1&qpcustomb=*17&qpaf=-000%09101%09US%0D">Source
+                    </a>
+                </h4>
+            </p>
+            <h3>6. What is the average cost and bandwidth limits per user (in general) in each of the three markets? How may this impact development?
+            </h3>
+            <p>
+                <ul>
+                    <li>U.S: $42/2GB Data</li>
+                    <li>Japan: $12/2GB Data</li>
+                    <li>$24/2GB Data</li>
+                </ul>
+                <h4>
+                    <a href="http://gigaom.com/broadband/mobile-internet-cost-around-the-world-infographics/">Source</a>
+                </h4>
+            </p>
+            <h3>7. And, finally, what would be your suggested strategy in project topic and global market choice? Feel free to have a first and second choice.
+            </h3>
+            <p>Based on the general information I found, I would suggest a social networking or gaming app in Great Britain.  My reasoning is that the bandwidth cost, while more expensive than Japan, is less expensive (including currency conversion) than in the United States.  Combined with the Costs, the high adoption rate of OS updates would allow us to take full advantage of any advancements in an OS and likely contribute to making our app more unique, not to mention ahead of the game.  In a market where small distinctions can mean success or failure, being out ahead of the pack as a developer is a large part of why I make this suggestion. Most importantly, I like $$$$.
+            </p>
+
+        </article>
+
         <section data-role="page" id="geolocation" data-add-back-btn="true" data-theme="a">
             <header data-role="header" id="geoheader" data-theme="a" align="center" data-position="fixed">
                 <p>X marks the spot!</p>
@@ -118,9 +205,20 @@
             <article data-role="content" id="geoSnapshot">
             </article>
         </section>
+        <section data-role="page" id="accelerometer" data-add-back-btn="true" data-theme="a">
+            <div data-role="content" class="content">
+                
+                <p>
+                <div id="accelContainer">Waiting for accelerometer...</div>
+                </p>
+                
+            </div> <!-- end of cta-div -->
+        
             
             
-        <div data-role="page" id="landing" data-theme="a" data-add-back-btn="true">
+            
+        </section>
+        <section data-role="page" id="landing" data-theme="a" data-add-back-btn="true">
             <header data-role="header" data-theme="a" data-position="fixed">
                 <h1>Team Home</h1>
             </header>
@@ -180,7 +278,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
