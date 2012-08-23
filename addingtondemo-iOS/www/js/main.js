@@ -256,42 +256,39 @@ $(function(){
         });
   
         //Accelerometer feature for Demo landing page
-            // The watch id references the current `watchAcceleration`
-                var watchID = null;
-  
-            // Wait for PhoneGap to load
-            document.addEventListener("deviceready", onDeviceReady, false);
-  
-            function onDeviceReady() {
-            updateAccel();
-            }
-  
-            function updateAccel() {
-                watchID = navigator.accelerometer.watchAcceleration(successCond, errorCond, {frequency: 4000});
-            }
+        var watchID = null;
 
-            function stopUpdate() {
-                if (watchID) {
-                    navigator.accelerometer.clearWatch(watchID);
-                    watchID = null;
-                }
+        document.addEventListener("deviceready", onDeviceReady, false);
+        
+        function onDeviceReady() {
+            startMonitor();
+        }
+  
+        function startMonitor() {
+  
+        var updateTimer = { frequency: 3000 };
+  
+        watchID = navigator.accelerometer.watchAcceleration(successCond, errorCond, {frequency: 4000});
+        }
+  
+        function stopMonitor() {
+            if (watchID) {
+                navigator.accelerometer.clearWatch(watchID);
+                watchID = null;
             }
+        }
   
-                // onSuccess: Get a snapshot of the current acceleration
-                function successCond (acceleration) {
-                    $('#accelContainer').innerHTML = 'Acceleration X: ' + acceleration.x + '<br />' +
-                    'Acceleration Y: ' + acceleration.y + '<br />' +
-                    'Acceleration Z: ' + acceleration.z + '<br />' +
-                    'Timestamp: '      + acceleration.timestamp + '<br />';
-                }
-  
-  // onError: Failed to get the acceleration
-  //
-  function errorCond() {
-  alert('Failed to sample Accelerometer data.');
-  }
-  
-  
+        function successCond(acceleration) {
+            var element = document.getElementById('accelerometer');
+                element.innerHTML = 'X Axis: ' + acceleration.x + '<br />' +
+                    'Y Axis: ' + acceleration.y + '<br />' +
+                    'Z Axis: ' + acceleration.z + '<br />' +
+                    'Periodicity: ' + acceleration.timestamp + '<br />';
+        }
+
+        function errorCond() {
+            alert('Failed to sample accelerometer data, please try again.');
+        }
 
     //Mobile device page refresh
     $('mobileRefresh').on('click', function(){

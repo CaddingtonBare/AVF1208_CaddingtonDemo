@@ -257,3 +257,7 @@ input[id=searchbox]{
 input[id=gosearch]{
     margin: 3px;
 }
+div[id=accelerometer] {
+    text-align: center;
+    margin-top: 350px;
+}
