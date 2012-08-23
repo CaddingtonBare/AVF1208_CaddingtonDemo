@@ -69,20 +69,17 @@ $(function(){
             var value = localStorage.getItem(key);
             var obj = JSON.parse(value);
             $('#itemsUl')
-                .append('<li><h3><img src="img/' + obj.sports[1] + '_10px.png" />' + obj.sports[1] + '</h3></li')
-            ;
-            $('#itemsUl li:last')
-                .append('<ul>' + obj.sports[1] + '</ul>')
-            getImage(obj.sports[i]);
+                .append('<li><h3><img src="img/' + obj.sports[1] + '_10px.png" />' + obj.sports[1] + '</h3></li>' + '<li>' + obj.teamname[0] + obj.teamname[1] + '</li>' + '<li>' + obj.teamsize[0] + obj.teamsize[1] + '</li>' + '<li>' + obj.nextdate[0] + obj.nextdate[1] + '</li>' + '<li>' + obj.notes[0] + obj.notes[1]
+            );
             for (var n in obj){
-                var optSubText = $('<li id="subLi">' + obj[n][0] + " " + obj[n][1] + '</li');
+                var optSubText = $('<li id="subLi">' + obj[n][0] + " " + obj[n][1] + '</li>');
                 var subLi = $('#subLi');
                 $('#itemsUl li:last ul:last')
                     .append(optSubText)
                     .append('<li id="linksLi"></li>')
                 ;
+                makeItemLinks(key); //Create edit/delete links for each item.
             }            
-            makeItemLinks(key); //Create edit/delete links for each item.
         }
     console.log(obj);
     }
@@ -104,8 +101,8 @@ $(function(){
             .append('<br>')
             .append('<a id="deleteLink" href="#">Delete Team</a>')
         ;
-        $('#editLink').on("click", editItem);
-        $('#deleteLink').on("click", deleteItem);
+        $('#editLink').on('click', editItem);
+        $('#deleteLink').on('click', deleteItem);
     }
     
     var editItem = function(){
@@ -289,11 +286,6 @@ $(function(){
         function errorCond() {
             alert('Failed to sample accelerometer data, please try again.');
         }
-
-    //Mobile device page refresh
-    $('mobileRefresh').on('click', function(){
-        window.location.refresh();
-    });
   
     //Populate edit form with info
     var errMsg = $('#errors');

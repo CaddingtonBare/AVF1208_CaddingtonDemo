@@ -261,3 +261,58 @@ div[id=accelerometer] {
     text-align: center;
     margin-top: 350px;
 }
+div[id=displaycontent] li {
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+}
+section[id="reflectionvid"] h1 {
+    text-align: center;
+}
+video.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+@media all and (min-width: 800px){
+    section[id="developerinfo"] {
+        margin: 0 0 0 20px;
+        display: inline;
+        float: left;
+        width: 25%;
+    }
+    section[id=demoCRUD] {
+        margin: 0 0 0 20px;
+        float: left;
+        clear: left;
+        width: 25%;
+    }
+    section[id=demofeatures] {
+        margin: 0 0 0 20px;
+        float: left;
+        clear: left;
+        width: 25%;
+    }
+    section[id=iosdemofeatures] {
+        margin: 0 0 0 20px;
+        float: left;
+        clear: left;
+        width: 25%;
+    }
+    section[id=researchtopics] {
+        float: center;
+        display: inline-block;
+        width: 25%
+    }
+    section[id=reflectionvid] {
+        clear: center;
+        display: inline-block;
+        width: 25%
+    }
+    a h3 {
+        margin: 10px 0;
+    }
+}
+
