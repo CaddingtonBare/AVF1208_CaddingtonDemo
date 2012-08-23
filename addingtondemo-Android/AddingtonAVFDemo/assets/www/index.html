@@ -1,191 +1,321 @@
-<!DOCTYPE html>
-<!-- AVF Demo App / Christopher Addington / Term: 1208 -->
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>My Pickup League</title>
+/*
+ AVF Demo
+ Christopher Addington
+ Term 1208
+*/
 
-        <meta name="description" content="Pickup League web app launch page" />
-        <meta name="keywords" content="pickup, sports, league" />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="cleartype" content="on">
-	<link rel="stylesheet" href="css/jquery.mobile-1.0.min.css" />
-	<link rel="stylesheet" href="css/styles.css" />
-    <script src="js/modernizr.custom.min.js"></script>
-	<script src="js/jquery.mobile-1.0.min.js"></script>
-    </head>
-    <body>
-        <div data-role="page" id="demolanding" data-add-back-btn="true" data-theme="a">
-            <header data-role="header" id="demoheader" data-theme="a" align="center" data-position="fixed">
-                <p>AVF Demo</p>
-            </header>
-            <section id="developerinfo" align="center">
-                <h1>Developer Information</h1>
-                <p>Christopher Addington</p>
-                <p>Full Sail University</p>
-                <p>Advanced Visual Frameworks (AVF) 1208</p>
-            </section>
-            <section id="demoCRUD" align="center" data-theme="a">
-                <h1>Links to CRUD Apps</h1>
-                <a href="#landing">    
-                    <h3>(Not yet) Working CRUD App</h3>
-                </a>
-                <br>
-                <a href="#">    
-                    <h3>(Currently just a # link) Revised CRUD App</h3>
-                </a>
-            </section>
-            <br>
-            <section id="demofeatures" align="center" data-theme="a">
-                <h1>Demo of Native Features</h1>
-                <a href="#" id="notify">
-                    <h3>Notification</h3>
-                </a>
-                <br>
-                <a href="#geolocation" id="geo">
-                    <h3>Geo</h3>
-                </a>
-            </section>
-            <br>
-            <section id="researchtopics" align="center" data-theme="a">
-                <h1>Weekly Research Topics</h1>
-                <a href="#firstweek">
-                    <h3>Industry Research and Project Intent</h3>
-                </a>
-                <br>
-                <a href="#secondweek">
-                    <h3>Accessibility</h3>
-                </a>
-                <br>
-                <a href="#thirdweek">
-                    <h3>Market Research</h3>
-                </a>
-            </section>
-            <br>
-        </div>
-        <div data-role="page" id="firstweek" data-add-back-btn="true" data-theme="a">
-            <header data-role="header" id="firstweekheader" data-theme="a" align="center" data-position="fixed">
-                <p>Industry Research and Project Intent</p>
-            </header>
-            <h3>1. What types of native features (on Android and iOS devices) would you be able to implement with the use of HTML/CSS/JS only?
-            </h3>
-                <p>Through Phonegap we can implement: accelerometer, camera, geolocation, contacts, and notification (vibrations/sound).
-                </p>
-            <h3>2. For your CRUD app revision and/or Demo App components, which of these do you think you will implement?
-            </h3>
-                <p>I plan to utilize notification, geolocation, and would like to also implement the camera.  Geolocation for tagging the fields or other team meetup spots (Thought of a use case for coordinating a meet-up spot at bar/restaurant for multiple teams). Camera for taking game and team photos then appending them to a team profile or on a separate page, tapping into photobucket/flickr would be even cooler.  Notifications are of course useful for any time new information is added, that way Users will be guided to team/game/league updates within the app.
-                </p>
-            <h3>3. Briefly describe some past 'lessons learned' regarding workflow as it relates to research, design, development, etc.
-            </h3>
-                <p>Never try to build the perfect mouse trap on your first time through. Not only does nitpicking every detail as you work waste time by holding you back, it also doesn't take into account that working on an outline with limited functionality has overwhelming benefits. The foremost of those being that going back to, in this case refactor code, is an invaluable learning experience. I've cemented solid coding practices by making huge mistakes, I learn better when I figure something out and know never to make the same mistake again.
-                </p>
-            <h3>4. Please describe any design intentions you may have for hte AVF Demo app and the revised/new version of your CRUD app.
-            </h3>
-                <p>My primary design intention is to put more power into the hands of potential Users by giving them more access to customizing their own experience through team photos/logos. Tapping into contacts is something I'm interested in, as it reinforces the social nature of my app.  Also, I would like to have multi-team calendar awareness so  if you played in several different sports throughout the week, a team lead could easily look up your schedule without needing to ask for availability.
-                </p>
-            <h3>5. If not covered above, please also describe any functionality intentions you may have for both the AVF Demo app and the revised/new version of your CRUD app.
-            </h3>
-            <p>To summarize, I'd like to have robust micro-(team) and macro-level (league) management through the app to really help the Users build a community with the help of the app.  Mostly to provide a one-stop shop experience for Users who's connection with teammates revolves around the sports they play.
-            </p>
-        </div>
-        <div data-role="page" id="secondweek" data-add-back-btn="true" data-theme="a">
-            <header data-role="header" id="secondweekheader" data-theme="a" align="center" data-position="fixed">
-                <p>Accessibility</p>
-            </header>
-            <h3>1. What are some of the ways that you could change your HTML on your Demo app to be more accessible? (Remember, you can use the Section tag with jQuery, for instance)
-            </h3>
-            <p>I could utilize the native video element to help screenreaders easily identify videos.  For deaf users I could then add track child elements within video with a call to .vtt files for captions/subtitles.  Taking the time to transcribe the subtitles in the caption format would enable deaf users to access the video’s content.  The track element can be used for blind users as well by adding audio descriptions of video content.
-            </p>
-            <h3>2. Visit a video service on the web (like YouTube) and search for "Screen Reader Demo" and "Mobile Screen Reader" - what are some of the common frustrations (or common support mechanisms) that you see among the examples that are given - how could you fix them (or use them)?
-            </h3>
-            <p>Based on comments by the YouTube user cavision1, I’ve found that there can be various problems with screen readers.  First is privacy concerns when audio is read aloud for blind users.  Cavision1 brings up a great point that sometimes text messages are read aloud at a higher volume than he’d like.  Navigation also seems to be a problem, including a lack of instruction on how to perform the navigation.  Though I’m not sure of the entire solution for navigation I believe (within the context of video) that navigation would be aided with the inclusion of chapters on all video content.  For the privacy of blind Users with a screen reader who want to keep private content at a lower volume, I would probably utilize a certain id to adjust the volume or alternatively confirm the volume with the user first.
-            </p>
-            <h3>3. Devices: Please list two devices (and some of their features) that are made specifically to support Accessibility.
-            </h3>
-            <p>The iPad and iPhone are the obvious picks, all thanks to the VoiceOver application.  While it’s technically the application that does the legwork, reading about Apple’s intent when designing the devices makes me think they qualify as being made to support Accessibility (if not specifically, at least with equal recognition).  The screens on both are large enough to provide more room for enlarged content (thinking of the near-blind) and VoiceOver allows for audio of nearly all on-screen elements.  Even actions such as dimming and screen lock include audio snippets.
-            </p>
-            <h3>4. Mobile Apps: Please list two apps (either Android or iOS, or both) that are made specifically to support Accessibility.
-            </h3>
-            <p>First is AT&amp;T Accessibility which provides a whole array of features designed specifically to support accessibility.  The best demo I found is at http://www.youtube.com/watch?v=zPxv1ARiQrU
-            The second would be VoiceOver that I mentioned previously for question #3.  It includes many on-screen features, but it even goes so far as to dictate how many faces are detected in a picture.  It lets users change button functionality as well, blind users can use the volume button to snap photos.
-            </p>
-        </div>
-        <section data-role="page" id="geolocation" data-add-back-btn="true" data-theme="a">
-            <header data-role="header" id="geoheader" data-theme="a" align="center" data-position="fixed">
-                <p>X marks the spot!</p>
-            </header>
-            <article data-role="content" id="geoSnapshot">
-            </article>
-        </section>
-            
-            
-        <div data-role="page" id="landing" data-theme="a" data-add-back-btn="true">
-            <header data-role="header" data-theme="a" data-position="fixed">
-                <h1>Team Home</h1>
-            </header>
-            <div data-role="content">
-                <img id="brandlogohome" src="img/leaguelogo.png" />
-            </div>
-            <div id="CTA">
-                <a href="additem.html" id="ctalink">
-                    <img id="ctaimg" src="img/CTA.png">
-                        </a>
-            </div>
-            <!-- Search -->
-            <div data-role="content">
-                <form id="search" action="">
-                    <div align="center">
-                        <input id="searchbox" type="text" placeholder="Team Name" data-theme="c" />
-                        <input id="gosearch" type="submit" value="Search" data-theme="a">
-                    </div>
-                </form>
-            </div>
-            <div data-role="content" >
-                <div data-role="collapsible-set">
-                    <div data-role="collapsible" data-collapsed="true" data-theme="a">
-                        <h3><img src="img/Basketball_10px.png" />Basketball</h3>
-                        <div data-role="content">
-                            <ul data-role="listview" data-theme="c">
-                            </ul>
-                        </div>
-                    </div>
-                    <div data-role="collapsible" data-collapsed="true" data-theme="a">
-                        <h3><img src="img/Football_10px.png" />Football</h3>
-                        <div data-role="content">
-                            <ul data-role="listview" data-theme="c">
-                            </ul>
-                        </div>
-                    </div>
-                    <div data-role="collapsible" data-collapsed="true" data-theme="a">
-                        <h3><img src="img/Racquetball_10px.png" />Racquetball</h3>
-                        <div data-role="content">
-                            <ul data-role="listview" data-theme="c">
-                            </ul>
-                        </div>
-                    </div>
-                    <div data-role="collapsible" data-collapsed="true" data-theme="a">
-                        <h3><img src="img/Soccer_small.png" />Soccer</h3>
-                        <div data-role="content">
-                            <ul data-role="listview" data-theme="c">
-                            </ul>
-                        </div>
-                    </div>
-                    <div data-role="collapsible" data-collapsed="true" data-theme="a">
-                        <h3><img src="img/Tennis_10px.png" />Tennis</h3>
-                        <div data-role="content">
-                            <ul data-role="listview" data-theme="c">
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </script>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="js/main.js" ></script>
-	<script src="js/jquery.mobile-1.0.min.js"></script>
-    <script type="text/javascript" src="js/cordova-2.0.0.js"></script>
-    </body>
-</html>
+
+label.error{
+	display: block;
+	margin: 10px 0;
+}
+
+.ui-bar-a {
+	border: 1px solid #141714 /*{a-bar-border}*/;
+	background:  			#e9eaeb  /*{a-bar-background-color}*/;
+	color: #e2ef35 /*{a-bar-color}*/;
+	font-weight: bold;
+	text-shadow:  0  /*{a-bar-shadow-x}*/  1px  /*{a-bar-shadow-y}*/  1px  /*{a-bar-shadow-radius}*/ #141714 /*{a-bar-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #474745 /*{a-bar-background-start}*/), to( #5c5b5a /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #474745 /*{a-bar-background-start}*/, #5c5b5a /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
+}
+.ui-bar-a .ui-link-inherit {
+	color: #e2ef35 /*{a-bar-color}*/;
+}
+.ui-bar-a .ui-link {
+	color:  #7cc4e7  /*{a-bar-link-color}*/;
+	font-weight: bold;
+}
+.ui-bar-a .ui-link:hover {
+	color:  #e2ef35  /*{a-bar-link-hover}*/;
+}
+
+.ui-bar-a .ui-link:active {
+	color:  #e2ef35  /*{a-bar-link-active}*/;
+}
+
+.ui-bar-a .ui-link:visited {
+    color:  #2489CE  /*{a-bar-link-visited}*/;
+}
+
+.ui-bar-a,
+.ui-bar-a input,
+.ui-bar-a select,
+.ui-bar-a textarea,
+.ui-bar-a button {
+	  font-family: Helvetica /*{global-font-family}*/;
+}
+.ui-body-a {
+	border: 1px solid #B3B3B3 /*{a-body-border}*/;
+	color:  	#E2EF35  /*{a-body-color}*/;
+	text-shadow:  0  /*{a-body-shadow-x}*/  1px  /*{a-body-shadow-y}*/  0  /*{a-body-shadow-radius}*/  #141714 /*{a-body-shadow-color}*/;
+	background: #2a692d /*{a-body-background-color}*/;
+	background-image: -webkit-radial-gradient(50px 50px, circle cover, #3e9842 10%, #37863a 25%, #2a692d 45%, #37863a 75%, #3e9842 90%);
+}
+.ui-body-a,
+.ui-body-a input,
+.ui-body-a select,
+.ui-body-a textarea,
+.ui-body-a button {
+	  font-family: Helvetica /*{global-font-family}*/;
+}
+
+.ui-body-a .ui-link-inherit {
+	color:  	#e2ef35  /*{a-body-color}*/;
+}
+
+.ui-body-a .ui-link {
+	color: #e2ef35 /*{a-body-link-color}*/;
+	text-align: center;
+	font-weight: bold;
+}
+
+.ui-body-a .ui-link:hover {
+	color:  #2489CE  /*{a-body-link-hover}*/;
+}
+
+.ui-body-a .ui-link:active {
+	color:  #2489CE  /*{a-body-link-active}*/;
+}
+
+.ui-body-a .ui-link:visited {
+    color:  #2489CE  /*{a-body-link-visited}*/;
+}
+
+.ui-btn-up-a {
+	border: 1px solid #141714 /*{a-bup-border}*/;
+	background: #eee /*{a-bup-background-color}*/;
+	font-weight: bold;
+	color: #e2ef35 /*{a-bup-color}*/;
+	text-shadow: 0 /*{a-bup-shadow-x}*/  1px  /*{a-bup-shadow-y}*/  1px  /*{a-bup-shadow-radius}*/ #141714 /*{a-bup-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #474745 /*{a-bup-background-start}*/), to( #5c5b5a /*{a-bup-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #474745 /*{a-bup-background-start}*/, #5c5b5a /*{a-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
+}
+.ui-btn-up-a a.ui-link-inherit {
+	color: #e2ef35 /*{a-bup-color}*/;
+}
+
+.ui-btn-hover-a a.ui-link-inherit {
+	color:  					#2F3E46  /*{a-bhover-color}*/;
+}
+.ui-btn-down-a {
+	border: 1px solid  		#808080  /*{a-bdown-border}*/;
+	background:  			#fdfdfd  /*{a-bdown-background-color}*/;
+	font-weight: bold;
+	color:  					#2F3E46  /*{a-bdown-color}*/;
+	text-shadow:  0  /*{a-bdown-shadow-x}*/  1px  /*{a-bdown-shadow-y}*/  1px  /*{a-bdown-shadow-radius}*/  #ffffff  /*{a-bdown-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(  #eee  /*{a-bdown-background-start}*/), to(  #fdfdfd  /*{a-bdown-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top,  #eee  /*{a-bdown-background-start}*/,  #fdfdfd  /*{a-bdown-background-end}*/); /* Chrome 10+, Saf5.1+ */
+}
+.ui-btn-down-a a.ui-link-inherit {
+	color:  					#2F3E46  /*{a-bdown-color}*/;
+}
+.ui-btn-up-a,
+.ui-btn-hover-a,
+.ui-btn-down-a {
+	  font-family: Helvetica /*{global-font-family}*/;
+	text-decoration: none;
+}
+img[id=brandlogohome]{
+	margin: 0px;
+	width: 100%;
+}
+img[id=brandlogo]{
+	margin: 0px 0px;
+	width: 60%;
+}
+img[id=ctaimg]{
+    margin: 10px 0 20px;
+    width: 100%;
+}
+header h1:nth-child(1) {
+    width: auto;
+    padding: 5px;
+    margin: 0 0 20px 0;
+    font: bold 36px Helvetica;
+    color: #E2EF35;
+    text-align: center;
+    text-shadow: 1px 1px #141714;
+    border: 1px solid #141714;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(top, #474745, #5c5b5a 75%);
+}
+h1 label:nth-child(1) {
+    font: bold 20px Helvetica;
+}
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+h1 img {
+    height: 40px;
+    width: 40px;
+}
+h4 a {
+    text-decoration: none;
+    font-size: 12px;
+    inline;
+    margin: 0 10px;
+}
+form[id=search]{
+    display: block;
+    width: auto;
+    margin:auto;
+}
+form select:nth-child(1) {
+    margin: 0 0 20px 0;
+}
+select option {
+    font: 14px Helvetica;
+}
+form fieldset {
+    border: thin solid #141714;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(top, #474745, #5c5b5a 25%);
+}
+fieldset legend {
+    font: bold 18px Helvetica;
+    color: #e2ef35;
+    text-shadow: 1px 1px #141714;
+    padding: 20px 0 0 0;
+    letter-spacing: 10px;
+}
+fieldset span {
+    font: small Helvetica;
+}
+ul li {
+    margin: 0 0 10px 0;
+    font: 14px Helvetica;
+    line-height: 15px;
+    list-style: none;
+}
+ul[id=sportslist] ul{
+    text-align: center;
+    text-shadow: 1px 1px #141714;
+    font: bold 24px Helvetica;
+    margin: 2px 0 2px 0;
+    border: thin solid #141714;
+    border-radius: 10px;
+    padding: 15px;
+    background-image: -webkit-linear-gradient(top, #474745, #5c5b5a, #474745 100%);
+}
+ul[id=sportslist] * ul:nth-child(1){
+    margin: 25px 0 2px 0;
+}
+ul[id=sportslist] a{
+    text-decoration: none;
+    color: #e2ef35;
+}
+nav a {
+    font: bold 14px Helvetica;
+    text-decoration: none;
+    color: #e2ef35;
+    margin: 0 10px 0 0;
+    padding: 3px;
+    border: thin solid #141714;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(top, #474745, #5c5b5a 100%);
+    box-shadow: 2px 2px 0 0 rgba(110,110,110,1);
+}
+section a {
+    text-decoration: none;
+}
+section h1 {
+    align: center;
+}
+section h3 {
+    font: bold 20px Helvetica;
+    text-decoration: none;
+    color: #e2ef35;
+    margin: 0 10px 0 0;
+    padding: 3px;
+    border: thin solid #141714;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(top, #474745, #5c5b5a 100%);
+    box-shadow: 2px 2px 0 0 rgba(110, 110, 110, 1);
+}
+h1 a:nth-child(1) {
+    font: bold 18px Helvetica;
+    padding: 5px;
+    border: thin solid #141714;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(top, #94d996, #71a873 100%);
+    box-shadow: 2px 2px 0 0 rgba(110,110,110,1);
+}
+section p:nth-child(1) {
+    font: bold 14px Helvetica;
+}
+li label {
+    font: 14px Helvetica;
+}
+input[id=searchbox]{
+    width: 60%;
+    display: block;
+    margin: 20px 0 0;
+    border-radius: 10px;
+}
+input[id=gosearch]{
+    margin: 3px;
+}
+div[id=accelerometer] {
+    text-align: center;
+    margin-top: 350px;
+}
+div[id=displaycontent] li {
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+}
+section[id="reflectionvid"] h1 {
+    text-align: center;
+}
+video.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+a h3 {
+    margin: 10px 0;
+}
+
+@media all and (min-width: 800px){
+    section[id="developerinfo"] {
+        margin: 0 0 0 20px;
+        display: inline;
+        float: left;
+        width: 25%;
+    }
+    section[id=demoCRUD] {
+        margin: 0 0 0 20px;
+        float: left;
+        clear: left;
+        width: 25%;
+    }
+    section[id=demofeatures] {
+        margin: 0 0 0 20px;
+        float: left;
+        clear: left;
+        width: 25%;
+    }
+    section[id=iosdemofeatures] {
+        margin: 0 0 0 20px;
+        float: left;
+        clear: left;
+        width: 25%;
+    }
+    section[id=researchtopics] {
+        float: center;
+        display: inline-block;
+        width: 25%
+    }
+    section[id=reflectionvid] {
+        clear: center;
+        display: inline-block;
+        width: 25%
+    }
+    a h3 {
+        margin: 10px 0;
+    }
+}
+

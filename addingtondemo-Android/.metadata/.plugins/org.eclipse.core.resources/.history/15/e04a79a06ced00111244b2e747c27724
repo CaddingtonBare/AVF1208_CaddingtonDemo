@@ -16,7 +16,7 @@
 	<script src="js/jquery.mobile-1.0.min.js"></script>
     </head>
     <body>
-        <article data-role="page" id="demolanding" data-add-back-btn="true" data-theme="a">
+        <div data-role="page" id="demolanding" data-add-back-btn="true" data-theme="a">
             <header data-role="header" id="demoheader" data-theme="a" align="center" data-position="fixed">
                 <p>AVF Demo</p>
             </header>
@@ -25,56 +25,46 @@
                 <p>Christopher Addington</p>
                 <p>Full Sail University</p>
                 <p>Advanced Visual Frameworks (AVF) 1208</p>
-            </section><br />
+            </section>
             <section id="demoCRUD" align="center" data-theme="a">
-                <h1>CRUD Apps</h1>
-                <a href="https://caddington.cloudant.com/asdproject/_design%2Fpickupleague/additem.html">    
-                    <h3>Original CRUD App</h3>
+                <h1>Links to CRUD Apps</h1>
+                <a href="#landing">    
+                    <h3>(Not yet) Working CRUD App</h3>
                 </a>
-                <a href=additem.html>    
-                    <h3>Revised CRUD App</h3>
+                <br>
+                <a href="#">    
+                    <h3>(Currently just a # link) Revised CRUD App</h3>
                 </a>
             </section>
-
+            <br>
             <section id="demofeatures" align="center" data-theme="a">
-                <h1><img src="img/android_50px.png" />+<img src="img/apple.png" /></h1>
+                <h1>Demo of Native Features</h1>
                 <a href="#" id="notify">
                     <h3>Notification</h3>
                 </a>
+                <br>
                 <a href="#geolocation" id="geo">
                     <h3>Geo</h3>
                 </a>
-                <a href="#" id="network">
-                    <h3>Network</h3>
-                </a>
             </section>
-            <section id="iosdemofeatures" align="center" data-theme="a">
-                <h1><img src="img/apple.png" /></h1>
-                <a href="#accelerometerPage" id="network">
-                    <h3>Accelerometer</h3>
-                </a>
-            </section>
+            <br>
             <section id="researchtopics" align="center" data-theme="a">
                 <h1>Weekly Research Topics</h1>
                 <a href="#firstweek">
                     <h3>Industry Research and Project Intent</h3>
                 </a>
+                <br>
                 <a href="#secondweek">
                     <h3>Accessibility</h3>
                 </a>
+                <br>
                 <a href="#thirdweek">
                     <h3>Market Research</h3>
                 </a>
             </section>
-            <section id="reflectionvid">
-                <h1>Reflection Video</h1>
-                <video class="center" width="480" height="272" controls>
-                    <source src="img/addingtonAVFWk2.mov" type="video/mp4" />
-                    <source src="img/addingtonAVFWk2.webm" type='video.webm; codecs="vp8, vorbis"' />
-                </video>
-            </section>
-        </article>
-        <article data-role="page" id="firstweek" data-add-back-btn="true" data-theme="a">
+            <br>
+        </div>
+        <div data-role="page" id="firstweek" data-add-back-btn="true" data-theme="a">
             <header data-role="header" id="firstweekheader" data-theme="a" align="center" data-position="fixed">
                 <p>Industry Research and Project Intent</p>
             </header>
@@ -98,93 +88,29 @@
             </h3>
             <p>To summarize, I'd like to have robust micro-(team) and macro-level (league) management through the app to really help the Users build a community with the help of the app.  Mostly to provide a one-stop shop experience for Users who's connection with teammates revolves around the sports they play.
             </p>
-        </article>
-        <article data-role="page" id="secondweek" data-add-back-btn="true" data-theme="a">
+        </div>
+        <div data-role="page" id="secondweek" data-add-back-btn="true" data-theme="a">
             <header data-role="header" id="secondweekheader" data-theme="a" align="center" data-position="fixed">
                 <p>Accessibility</p>
             </header>
             <h3>1. What are some of the ways that you could change your HTML on your Demo app to be more accessible? (Remember, you can use the Section tag with jQuery, for instance)
             </h3>
-            <p>I could utilize the native video element to help screenreaders easily identify videos.  For deaf users I could then add track child elements within video with a call to .vtt files for captions/subtitles.  Taking the time to transcribe the subtitles in the caption format would enable deaf users to access the videoâ€™s content.  The track element can be used for blind users as well by adding audio descriptions of video content.
+            <p>I could utilize the native video element to help screenreaders easily identify videos.  For deaf users I could then add track child elements within video with a call to .vtt files for captions/subtitles.  Taking the time to transcribe the subtitles in the caption format would enable deaf users to access the videoÕs content.  The track element can be used for blind users as well by adding audio descriptions of video content.
             </p>
             <h3>2. Visit a video service on the web (like YouTube) and search for "Screen Reader Demo" and "Mobile Screen Reader" - what are some of the common frustrations (or common support mechanisms) that you see among the examples that are given - how could you fix them (or use them)?
             </h3>
-            <p>Based on comments by the YouTube user cavision1, Iâ€™ve found that there can be various problems with screen readers.  First is privacy concerns when audio is read aloud for blind users.  Cavision1 brings up a great point that sometimes text messages are read aloud at a higher volume than heâ€™d like.  Navigation also seems to be a problem, including a lack of instruction on how to perform the navigation.  Though Iâ€™m not sure of the entire solution for navigation I believe (within the context of video) that navigation would be aided with the inclusion of chapters on all video content.  For the privacy of blind Users with a screen reader who want to keep private content at a lower volume, I would probably utilize a certain id to adjust the volume or alternatively confirm the volume with the user first.
+            <p>Based on comments by the YouTube user cavision1, IÕve found that there can be various problems with screen readers.  First is privacy concerns when audio is read aloud for blind users.  Cavision1 brings up a great point that sometimes text messages are read aloud at a higher volume than heÕd like.  Navigation also seems to be a problem, including a lack of instruction on how to perform the navigation.  Though IÕm not sure of the entire solution for navigation I believe (within the context of video) that navigation would be aided with the inclusion of chapters on all video content.  For the privacy of blind Users with a screen reader who want to keep private content at a lower volume, I would probably utilize a certain id to adjust the volume or alternatively confirm the volume with the user first.
             </p>
             <h3>3. Devices: Please list two devices (and some of their features) that are made specifically to support Accessibility.
             </h3>
-            <p>The iPad and iPhone are the obvious picks, all thanks to the VoiceOver application.  While itâ€™s technically the application that does the legwork, reading about Appleâ€™s intent when designing the devices makes me think they qualify as being made to support Accessibility (if not specifically, at least with equal recognition).  The screens on both are large enough to provide more room for enlarged content (thinking of the near-blind) and VoiceOver allows for audio of nearly all on-screen elements.  Even actions such as dimming and screen lock include audio snippets.
+            <p>The iPad and iPhone are the obvious picks, all thanks to the VoiceOver application.  While itÕs technically the application that does the legwork, reading about AppleÕs intent when designing the devices makes me think they qualify as being made to support Accessibility (if not specifically, at least with equal recognition).  The screens on both are large enough to provide more room for enlarged content (thinking of the near-blind) and VoiceOver allows for audio of nearly all on-screen elements.  Even actions such as dimming and screen lock include audio snippets.
             </p>
             <h3>4. Mobile Apps: Please list two apps (either Android or iOS, or both) that are made specifically to support Accessibility.
             </h3>
             <p>First is AT&amp;T Accessibility which provides a whole array of features designed specifically to support accessibility.  The best demo I found is at http://www.youtube.com/watch?v=zPxv1ARiQrU
             The second would be VoiceOver that I mentioned previously for question #3.  It includes many on-screen features, but it even goes so far as to dictate how many faces are detected in a picture.  It lets users change button functionality as well, blind users can use the volume button to snap photos.
             </p>
-        </article>
-        <article data-role="page" id="thirdweek" data-add-back-btn="true" data-theme="a">
-            <header data-role="header" id="thirdweekheader" data-theme="a" align="center" data-position="fixed">
-                <p>Market Research</p>
-            </header>
-            <h3>1. What are the 'top selling' app categories in the U.S.?
-            </h3>
-            <p>The top selling iOS app categories in the U.S. (in order) are: Games, Utilities, Lifestyle, and Social Networking. For Android: Entertainment, Personalization, Books/Reference, and Tools.
-            (Categories as defined by the sources, noted below respectively)
-                <h4>
-                    <a href="http://www.quora.com/What-are-the-top-5-categories-of-apps-in-terms-of-sales-from-the-iTunes-store">Source
-                    </a>
-                    <a href="http://www.appbrain.com/stats/android-market-app-categories">Source
-                    </a>
-                </h4>
-            </p>
-            <h3>2. What are the 'top selling' app categories in Japan?
-            </h3>
-            <p>I had a difficult time pinning down an up-to-date list for this so I took a sampling of several siteâ€™s listings for popular apps (excluding sites that listed their own app as #1).  The top categories seemed to be (not necessarily in order): Games, Social networking, and utility.
-            </p>
-            <h3>3. What are the 'top selling' app categories in Great Britain?
-            </h3>
-            <p>The top selling app categories in Great Britain are Social networking, games, utilities, and lifestyle.
-                <h4>
-                    <a href="http://www.apple.com/uk/iphone/from-the-app-store/">Source
-                    </a>
-                </h4>
-            </p>
-            <h3>4. Based on your three answers above, what might you infer about each of the markets listed?
-            </h3>
-            <p>The obvious takeaway is that games, utilities, lifestyle, and social networking are of universal appeal to countries/cultures across the world.  The popularity of social networking as one of the consistently-top-selling app categories lends itself to the notion that a popular application might easily go viral on a global scale, regardless of the category.
-            </p>
-            <h3>5. What percentage of Android users have the latest/greatest OS in the U.S? in Japan? in Great Britain? How might these differences impact development?
-            </h3>
-            <p>
-                <ul>
-                    <li>U.S: 11.65% for all versions 4.0+; 0.26% if limited to those running 4.1</li>
-                    <li>Japan: 9.8% for all versions 4.0+; 0.04% if limited to those running 4.1</li>
-                    <li>GB: 24.73% for all versions 4.0+; 0.70% if limited to those running 4.1</li>
-                </ul>
-                The differences in Android OS usage can affect development of specific version in instances like the current trend of sticking to 2.3.  Apps taking advantage of newer-version OS may not become commonplace until long after it has been released because of lagging adoption rates.  The greatest potential impact to development is a complete loss of support for a particular OS if itâ€™s generally skipped over as is the case with 4.0+.
-                <h4>
-                    <a href="http://www.netmarketshare.com/operating-system-market-share.aspx?qprid=10&qpcustomd=1&qpcustomb=*17&qpaf=-000%09101%09US%0D">Source
-                    </a>
-                </h4>
-            </p>
-            <h3>6. What is the average cost and bandwidth limits per user (in general) in each of the three markets? How may this impact development?
-            </h3>
-            <p>
-                <ul>
-                    <li>U.S: $42/2GB Data</li>
-                    <li>Japan: $12/2GB Data</li>
-                    <li>$24/2GB Data</li>
-                </ul>
-                <h4>
-                    <a href="http://gigaom.com/broadband/mobile-internet-cost-around-the-world-infographics/">Source</a>
-                </h4>
-            </p>
-            <h3>7. And, finally, what would be your suggested strategy in project topic and global market choice? Feel free to have a first and second choice.
-            </h3>
-            <p>Based on the general information I found, I would suggest a social networking or gaming app in Great Britain.  My reasoning is that the bandwidth cost, while more expensive than Japan, is less expensive (including currency conversion) than in the United States.  Combined with the Costs, the high adoption rate of OS updates would allow us to take full advantage of any advancements in an OS and likely contribute to making our app more unique, not to mention ahead of the game.  In a market where small distinctions can mean success or failure, being out ahead of the pack as a developer is a large part of why I make this suggestion. Most importantly, I like $$$$.
-            </p>
-
-        </article>
-
+        </div>
         <section data-role="page" id="geolocation" data-add-back-btn="true" data-theme="a">
             <header data-role="header" id="geoheader" data-theme="a" align="center" data-position="fixed">
                 <p>X marks the spot!</p>
@@ -192,17 +118,9 @@
             <article data-role="content" id="geoSnapshot">
             </article>
         </section>
-        <section data-role="page" id="accelerometerPage" data-add-back-btn="true" data-theme="a">
-            <header data-role="header" id="accelheader" data-theme="a" align="center" data-position="fixed">
-                <p>Accelerometer Sampling</p>
-            </header>
-            <div data-role="content" class="content">
-                <p>
-                    <div id="accelerometer">Standby for accelerometer sampling.</div>
-                </p>
-            </div>
-        </section>
-        <section data-role="page" id="landing" data-theme="a" data-add-back-btn="true">
+            
+            
+        <div data-role="page" id="landing" data-theme="a" data-add-back-btn="true">
             <header data-role="header" data-theme="a" data-position="fixed">
                 <h1>Team Home</h1>
             </header>
@@ -262,7 +180,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>

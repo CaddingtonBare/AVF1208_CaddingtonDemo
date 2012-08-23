@@ -275,6 +275,9 @@ video.center {
     margin-right: auto;
     margin-bottom: 20px;
 }
+a h3 {
+    margin: 10px 0;
+}
 
 @media all and (min-width: 800px){
     section[id="developerinfo"] {
